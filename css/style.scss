@@ -379,9 +379,18 @@ body {
 
     .page-header__nav, 
     .page-header__title{
+        padding: 0;
+        margin: 0;
         padding-left: 40px;
         padding-right: 40px;
     }
+
+    .page-header__nav picture {
+        width: 202px;
+        height: 59px;
+        padding-top: 15px;
+    }
+
 
     .page-header {
         position: relative;
@@ -395,10 +404,11 @@ body {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: right center;
+        background-color: #63a73a;
         z-index: -1;
         top: 0;
         bottom: 0;
-        right: 0;
+        right: -80px;
         left: calc(50% + 40px);
         
     }
@@ -408,6 +418,52 @@ body {
         padding: 0;
     }
 
+    .usernav__item  a {
+        font-size: 20px;
+        line-height: 25px;
+        font-weight: normal;
+        border: none;
+        color: white;
+    }
+
+    .usernav__item--active {
+        border-bottom: 2px solid white;
+    }
+
+    .page-header__title h2 {
+        padding: 0;
+        margin: 0;
+        padding-left: 80px;
+        margin-bottom: 45px;
+        padding-top: 105px;
+        font-size: 60px;
+        line-height: 60px;
+        font-weight: normal;
+        width: 570px;
+    }
+
+    .page-header__title p {
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: normal;
+        padding: 0;
+        margin: 0;
+        padding-left: 80px;
+        margin-bottom: 290px;
+        
+    }
+
+    .page-header__title button {
+        top: 350px;
+        left: 80px;
+    }
+
+
+    .page-header__title picture {
+        position: absolute;
+        top: 25px;
+        left: calc(50% + 100px) ;
+    }
 
 
 }
