@@ -225,6 +225,22 @@ body {
     margin-bottom: 30px;
     text-align: center;
     text-transform: uppercase;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+  .program__icon {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: #68b738;
+    border-radius: 50%;
+    margin-right: 20px;
   }
   .program__item p {
     margin: 0;
