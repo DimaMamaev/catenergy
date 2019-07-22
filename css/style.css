@@ -236,7 +236,7 @@ body {
     border-bottom: 2px solid #d9d9d9;
     padding-bottom: 20px;
   }
-  .program__item h3 {
+  .program__link {
     margin: 0;
     padding: 0;
     font-family: "Oswald", "Verdana", sans-serif;
@@ -245,6 +245,8 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
     margin-bottom: 20px;
+    display: block;
+    text-transform: uppercase;
   }
 }
 

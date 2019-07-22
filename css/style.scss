@@ -247,6 +247,7 @@ body {
         padding-left: 18px;
         padding-right: 18px;
         background-color: $grey;
+       
     }
 
     .program__item article {
@@ -273,7 +274,7 @@ body {
         padding-bottom: 20px;
     }
 
-    .program__item h3 {
+    .program__link {
         margin: 0;
         padding: 0;
         font-family: $oswald;
@@ -282,7 +283,10 @@ body {
         padding-top: 20px;
         padding-bottom: 20px;
         margin-bottom: 20px;
+        display: block;
+        text-transform: uppercase;
     }
+
 
 
 
