@@ -1,4 +1,4 @@
-var link = document.querySelector('.menu-btn--active');
+var link = document.querySelector('.menu-btn');
 var menu = document.querySelector('.page-header__usernav--active');
     
     link.addEventListener('click',function(event){
