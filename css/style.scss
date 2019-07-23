@@ -12,7 +12,6 @@ $arial: "Arial", sans-serif;
 //colors
 
 $grey: #f2f2f2;
-$grey-text:#c4c4c4;
 $green: #68b738;
 $greyline: #d9d9d9;
 
@@ -53,7 +52,7 @@ body {
         align-content: center;
         padding-top: 10px;
         text-align: center;
-        padding-bottom: 10px;
+        padding-bottom: 20px;
     }
 
     .page-header__btn {
@@ -160,7 +159,7 @@ body {
         padding-top: 25px;
         position: relative;
         max-height: 360px;
-        margin-bottom: 120px;
+        margin-bottom: 150px;
     }
 
     .title-content {
@@ -181,7 +180,6 @@ body {
         font-weight: 400;
         text-align: center;
         color: white;
-        
     }
 
     
@@ -221,8 +219,8 @@ body {
         padding-bottom: 10px;
         padding-left: 70px;
         padding-right: 70px;
+        margin-top: 10px;
         width: 100%;
-        display: block;
         
     }
 
@@ -231,6 +229,7 @@ body {
     .page-main {
         margin: 0;
         padding: 0;
+        margin-top: 20px;
     }
 
     .page-main__program,
@@ -241,69 +240,10 @@ body {
         padding-right: 20px;
     }
 
-    .program__item {
-        margin: 0;
-        padding: 0;
-        padding-left: 18px;
-        padding-right: 18px;
+    .program__slim,
+    .program__weight {
         background-color: $grey;
-       
     }
-
-    .program__item article {
-        margin: 0;
-        padding: 0;
-        font-size: 24px;
-        line-height: 50px;
-        font-weight: 400;
-        font-family: $oswald;
-        padding-top: 30px;
-        margin-bottom: 30px;
-        text-align: center;
-        text-transform: uppercase;
-        display: flex;
-        justify-content: left;
-    }
-    .program__icon{
-        margin: 0;
-        padding: 0;
-        position: relative;
-        width: 50px;
-        height: 50px;
-        background-color: #68b738;
-        border-radius: 50%;
-        margin-right: 20px;
-    }
-
-    .program__item p {
-        margin: 0;
-        padding: 0;
-        font-size: 14px;
-        line-height: 18px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: normal;
-        border-bottom: 2px solid $greyline;
-        padding-bottom: 20px;
-    }
-
-    .program__link {
-        margin: 0;
-        padding: 0;
-        font-family: $oswald;
-        font-size: 16px;
-        line-height: 16px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        margin-bottom: 20px;
-        display: block;
-        text-transform: uppercase;
-    }
-
-    
-
-
-
-
 }
 
 
