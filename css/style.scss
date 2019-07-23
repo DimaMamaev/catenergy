@@ -152,14 +152,13 @@ body {
     .page-header__title {
         padding: 0;
         margin: 0;
-        background-image: url(../img/index-background-mobile.png);
+        background-image: linear-gradient(to top,#fff 97px,transparent 97px),url(../img/index-background-mobile.png),linear-gradient(to top,#fff 197px,#61a63c 197px);
         background-repeat: no-repeat;
         background-position: top;
         background-size: 100%;
         padding-top: 25px;
         position: relative;
-        max-height: 360px;
-        margin-bottom: 150px;
+        margin-bottom: 20px;
     }
 
     .title-content {
@@ -229,7 +228,6 @@ body {
     .page-main {
         margin: 0;
         padding: 0;
-        margin-top: 20px;
     }
 
     .page-main__program,
@@ -240,10 +238,66 @@ body {
         padding-right: 20px;
     }
 
-    .program__slim,
-    .program__weight {
+    .program__item {
+        margin: 0;
+        padding: 0;
+        padding-left: 18px;
+        padding-right: 18px;
         background-color: $grey;
+       
     }
+
+    .program__item article {
+        margin: 0;
+        padding: 0;
+        font-size: 24px;
+        line-height: 50px;
+        font-weight: 400;
+        font-family: $oswald;
+        padding-top: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: left;
+    }
+    .program__icon{
+        margin: 0;
+        padding: 0;
+        position: relative;
+        width: 50px;
+        height: 50px;
+        background-color: #68b738;
+        border-radius: 50%;
+        margin-right: 20px;
+    }
+
+    .program__item p {
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+        line-height: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: normal;
+        border-bottom: 2px solid $greyline;
+        padding-bottom: 20px;
+    }
+
+    .program__link {
+        margin: 0;
+        padding: 0;
+        font-family: $oswald;
+        font-size: 16px;
+        line-height: 16px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        display: block;
+        text-transform: uppercase;
+    }
+
+
+
 }
 
 
