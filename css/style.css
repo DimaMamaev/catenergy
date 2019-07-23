@@ -422,6 +422,10 @@ body {
   .usernav__item--active {
     border-bottom: 2px solid #68b738;
   }
+  .program__item article {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 @media (min-width: 1300px) {

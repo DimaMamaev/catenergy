@@ -225,6 +225,8 @@ body {
 
 
     /////MAIN
+
+    ////page-main__program
     .page-main {
         margin: 0;
         padding: 0;
@@ -337,6 +339,12 @@ body {
         top: 23px;
         left: 120px;
     }
+
+    //////page-main__deteils
+
+   
+
+
 
 }
 
@@ -467,6 +475,17 @@ body {
     .usernav__item--active {
         border-bottom: 2px solid $green;
     }  
+
+    ////MAIN
+
+    /////page-main__program
+    .program__item article {
+        font-size: 36px;
+        line-height: 36px;
+        
+    }
+
+
 }
 
 
