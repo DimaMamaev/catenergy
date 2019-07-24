@@ -567,6 +567,12 @@ body {
 }
 
 
+
+
+
+
+
+
 @media (min-width:$dekstop-width) {
 
     body {
@@ -661,6 +667,65 @@ body {
         top: 25px;
         left: calc(50% + 100px) ;
     }
+
+
+    ///page-main__program
+    .page-main {
+        margin: 0;
+        padding: 0;
+        margin-left: 60px;
+        margin-left: 60px;
+        margin-top: 65px;
+    }
+
+    .page-main__program {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .program__item {
+        width: 570px;
+    }
+
+    .program__item--weight {
+        margin-left: 80px;
+    }
+    .program__item article {
+        font-size: 36px;
+        line-height: 37px;
+
+    }
+
+    .program__icon {
+        position: absolute;
+        top: 65%;
+        left: 65%;
+        width: 100px;
+        height: 100px;
+        display: block;
+    }
+
+    .program__icon--slim::before {
+        background: url(../img/slim-dekstop.png);
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        top: -3%;
+        left: 20%;
+    }
+    .program__icon--weight::before {
+        background: url(../img/weight-dekstop.png);
+        width: 134px;
+        height: 100%;
+        background-repeat: no-repeat;
+        top: 20%;
+        left: -20%;
+    }
+
+
+
 
 
 }
