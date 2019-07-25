@@ -389,10 +389,6 @@ body {
     background-image: url(../img/deteils__item4_mobile.png);
     background-size: 26px 31px;
    }
-
-
-
-
    .item__text {
        margin: 0;
        padding: 0;
@@ -403,8 +399,6 @@ body {
        padding-left: 20px;
        text-align: left;
    }
-
-
 
 }
 
@@ -623,6 +617,24 @@ body {
         top: 4px;
         left: 152px;
     }
+
+    //////page-main__deteils
+
+
+    .deteils__list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+       
+    }
+    .deteils__item {
+        display: block;
+        width: 324px;
+        
+    }
+   
+
+
 
 }
 

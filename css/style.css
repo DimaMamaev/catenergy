@@ -554,6 +554,21 @@ body {
     top: 4px;
     left: 152px;
   }
+  .deteils__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .deteils__item {
+    display: block;
+    width: 324px;
+  }
 }
 
 @media (min-width: 1300px) {
