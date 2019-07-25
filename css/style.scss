@@ -342,7 +342,67 @@ body {
 
     //////page-main__deteils
 
-   
+   .page-main__deteils h2 {
+       margin: 0;
+       padding: 0;
+       font-family: $oswald;
+       font-size: 36px;
+       line-height: 60px;
+       margin-bottom: 20px;
+   }
+
+   .deteils__list {
+       margin: 0;
+       padding: 0;
+       margin-bottom: 20px;
+   }
+   .deteils__item {
+       margin: 0;
+       padding: 0;
+       margin-bottom: 20px;
+       display: flex;
+   }
+
+   .deteils__item::before{
+       content: '';
+       width: 60px;
+       height: 60px;
+       background-color: #68b738;
+       display: block;
+       flex-shrink: 0;
+       background-image: url(../img/deteils__item1_mobile.png);
+       background-size: 26px 29px;
+       background-repeat: no-repeat;
+       background-position: center;
+   }
+
+   .deteils__item--prepare::before {
+    background-image: url(../img/deteils__item2_mobile.png);
+    background-size: 29px 31px;
+   }
+
+   .deteils__item--eat::before {
+    background-image: url(../img/deteils__item3_mobile.png);
+    background-size: 23px 30px;
+   }
+   .deteils__item--result::before {
+    background-image: url(../img/deteils__item4_mobile.png);
+    background-size: 26px 31px;
+   }
+
+
+
+
+   .item__text {
+       margin: 0;
+       padding: 0;
+       padding-top: 3%;
+       font-family:Arial, Helvetica, sans-serif;
+       font-size: 14px;
+       line-height: 18px;
+       padding-left: 20px;
+       text-align: left;
+   }
 
 
 
@@ -695,25 +755,28 @@ body {
     .program__item article {
         font-size: 36px;
         line-height: 37px;
-
+    }
+    .program__item p {
+        margin-right: 50px;
     }
 
-    .program__icon {
-        position: absolute;
-        top: 65%;
-        left: 65%;
+    .program__link {
+        margin: 0;
+    }
+    .program__icon{
+        position: relative;
+        top: -30px;
+        left: 0;
         width: 100px;
         height: 100px;
-        display: block;
+        margin-right: 70px;
     }
 
     .program__icon--slim::before {
         background: url(../img/slim-dekstop.png);
-        width: 100%;
-        height: 100%;
         background-repeat: no-repeat;
-        top: -3%;
-        left: 20%;
+        top: 0;
+        left: 10px;
     }
     .program__icon--weight::before {
         background: url(../img/weight-dekstop.png);
@@ -724,8 +787,7 @@ body {
         left: -20%;
     }
 
-
-
+    
 
 
 }
