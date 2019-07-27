@@ -564,10 +564,52 @@ body {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    position: relative;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    counter-reset: section;
   }
   .deteils__item {
-    display: block;
-    width: 324px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 70px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    width: 50%;
+    position: relative;
+    counter-increment: section;
+    z-index: 1;
+    height: 250px;
+  }
+  .deteils__item::after {
+    content: counter(section) " ";
+    position: absolute;
+    font-family: "Oswald", "Verdana", sans-serif;
+    font-size: 280px;
+    color: #f2f2f2;
+    top: -30%;
+    left: 50%;
+    z-index: 0;
+  }
+  .deteils__item::before {
+    width: 80px;
+    height: 80px;
+  }
+  .item__text {
+    margin: 0;
+    padding: 0;
+    padding-top: 25px;
+    text-align: left;
+    padding-right: 130px;
+    font-size: 16px;
+    line-height: 24px;
+    width: 300px;
+    z-index: 1;
   }
 }
 
@@ -652,8 +694,8 @@ body {
   .page-main {
     margin: 0;
     padding: 0;
-    margin-left: 60px;
-    margin-left: 60px;
+    margin-left: 40px;
+    margin-right: 40px;
     margin-top: 65px;
   }
   .page-main__program {
@@ -707,6 +749,43 @@ body {
     background-repeat: no-repeat;
     top: 20%;
     left: -20%;
+  }
+  .page-main__deteils {
+    padding: 0;
+    margin-top: 80px;
+  }
+  .page-main__deteils h2 {
+    font-size: 60px;
+    margin-bottom: 70px;
+  }
+  .deteils__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .deteils__item {
+    margin: 0;
+    padding: 0;
+    margin-right: 40px;
+    width: 245px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .deteils__item:nth-child(4) {
+    margin-right: 0;
+  }
+  .item__text {
+    padding: 0;
+    margin: 0;
+    padding-top: 40px;
+    width: auto;
+    font-size: 16px;
   }
 }
 /*# sourceMappingURL=style.css.map */
