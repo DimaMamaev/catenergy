@@ -77,7 +77,8 @@
                 </ul>
         </section>
         <section class="page-main__example">
-                <h2>Живой пример</h2>
+            <div class="page-main__example-wrapper">
+                <article>Живой пример</article>
                 <p>Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat 
                     Energy Slim. Отличный результат без изнуряющих тренировок! При этом он 
                     не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
@@ -85,24 +86,54 @@
                 <div class="example__slider">
                     <img src="" alt="">
                 </div>
+            </div>
         </section>
     </main>
     <footer class="page-footer">
-        <div class="page-footer__invaite">
-            <h2>приглашаем к сотрудничеству дилеров!</h2>
-            <p>ул. Большая Конюшенная, д. 19/8  Санкт-Петербург</p>
-        </div>
-        <div class="page-footer__map">
-
-        </div>
+        <section class="page-footer__contacts">
+            <div class="contacts__invitation">
+                <h2>приглашаем к сотрудничеству дилеров!</h2>
+                <p>ул. Большая Конюшенная, д. 19/8  Санкт-Петербург</p>
+            </div>
+            <div class="contacts__map"> </div>
+        </section>
         <section class="page-footer__social">
-            <img class="social__logo" src="" alt="">
-            <ul class="social__groups" >
-                <li><img class="groups__item" src="" alt=""></li>
-                <li><img class="groups__item" src="" alt=""></li>
-                <li><img class="groups__item" src="" alt=""></li>
+            <picture class="social__logo">
+                    <source media="(min-width:1300px)" srcset="#">
+                    <source media="(min-width:768px)" srcset="#">
+                    <img src="img/footer_logo_mobile.png" alt="logo">
+            </picture>
+            <ul class="social__groups">
+                <li>
+                    <picture class="groups__item">
+                            <source media="(min-width:1300px)" srcset="#">
+                            <source media="(min-width:768px)" srcset="#">
+                            <img src="img/footer_vk_mobile.png" alt="logo">
+                    </picture>
+                </li>
+                <li>
+                    <picture class="groups__item">
+                            <source media="(min-width:1300px)" srcset="#">
+                            <source media="(min-width:768px)" srcset="#">
+                            <img src="img/footer_insta_mobile.png" alt="logo">
+                    </picture>
+                </li>
+                <li>
+                    <picture class="groups__item">
+                            <source media="(min-width:1300px)" srcset="#">
+                            <source media="(min-width:768px)" srcset="#">
+                            <img src="img/footer_fb_mobile.png" alt="logo">
+                    </picture>
+                </li>
             </ul>
-            <img class="social__rights" src="" alt="">
+        </section>
+        <section class="page-footer__rightholder">
+            <p>HTML Academy</p>
+            <picture class="rightholder__logo">
+                    <source media="(min-width:1300px)" srcset="#">
+                    <source media="(min-width:768px)" srcset="#">
+                    <img src="img/footer_htmlacademy_mobile.png" alt="logo">
+            </picture>
         </section>
     </footer>
 <script src="js/js.js"></script>
