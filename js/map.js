@@ -6,13 +6,13 @@
 
         map = new google.maps.Map(document.getElementById('map'), {
             center: coordinates,
-            zoom: 14,   
+            zoom: 17,   
         }),
     
         marker = new google.maps.Marker({
             position: coordinates,
             map: map,
-            icon: "img/"
+            icon: "img/map-pin.png"
         });
        
 }
