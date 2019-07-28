@@ -442,16 +442,70 @@ body {
        padding-bottom: 40px;
        text-align: left;
    }
-   .page-main__example p {
+   .example__description {
         margin: 0;
         padding: 0;
         font-size: 14px;
         line-height: 18px;
         font-family: Arial, Helvetica, sans-serif;
    }
+   .example__data {
+       margin: 0;
+       padding: 0;
+       margin-top: 25px;
+       margin-bottom: 45px;
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+   }
+   .data__amount {
+       margin: 0;
+       padding: 0;
+       border: 1px solid $greyline;
+       border-radius: 3px;
+       position: relative;
+       text-align: center;
+       font-family: $oswald;
+       font-size: 24px;
+       line-height: 24px;
+       font-weight: normal;
+       padding-top: 15px;
+       padding-bottom: 15px;
+       width: 125px;
 
+   }
+   
 
+   .data__property {
+    position: absolute;
+    top: 95%;
+    left: 25%;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: normal;
+    text-align: center;
+    background-color: $grey;
+    margin: 0;
+    padding: 0;
+    top: 83%;
+    left: 0%;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-right: 5px;
+    padding-left: 5px;
+   }
+  
 
+   .example__cost {
+       text-align: center;
+       font-family: $oswald;
+       font-size: 14px;
+       line-height: 20px;
+       font-weight: normal;
+       text-transform: uppercase;
+   }
 
    //////FOOTER
 
