@@ -1032,13 +1032,44 @@ body {
 
 ////FOOTER
 
-    .page-footer__social-wrapper {
+    .page-footer__social {
         padding: 0;
         margin: 0;
         padding-left: 40px;
         padding-right: 40px;
+        padding-top: 65px;
+        padding-bottom: 65px;
         margin-left: 70px;
         margin-right: 70px;
     }
+    .social__logo {
+        margin-right: 160px;
+    }
+}
 
+
+
+
+//////MAP
+
+@media (min-width:$mobile-width) {
+    #map {
+        width: 100%;
+        height: 360px;
+    }
+}
+
+
+@media (min-width:$tablet-width) {
+    #map {
+        width: 100%;
+        height: 460px;
+    }
+}
+
+@media (min-width:$dekstop-width) {
+    #map {
+        width: 100%;
+        height: 560px;
+    }
 }
