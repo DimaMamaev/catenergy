@@ -792,6 +792,7 @@ body {
   .page-header--index {
     margin: 0;
     padding: 0;
+    overflow: hidden;
   }
   .usernav__item a {
     font-size: 20px;
