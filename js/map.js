@@ -1,30 +1,16 @@
- // Определяем переменную map
- var map;
 
- // Функция initMap которая отрисует карту на странице
+
+
  function initMap() {
+    var coordinates = {lat: 47.212325, lng: 38.933663},
 
-     // В переменной map создаем объект карты GoogleMaps и вешаем эту переменную на <div id="map"></div>
-     map = new google.maps.Map(document.getElementById('map'), {
-         // При создании объекта карты необходимо указать его свойства
-         // center - определяем точку на которой карта будет центрироваться
-         center: {lat: 59.938893, lng: 30.323090},
-         // zoom - определяет масштаб. 0 - видно всю платнеу. 18 - видно дома и улицы города.
-         zoom: 18
-     });
-
-     var marker = new google.maps.Marker({
-
-        // Определяем позицию маркера
-        position: {lat: 59.938893, lng: 30.323090},
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: coordinates
+        }),
     
-        // Указываем на какой карте он должен появится. (На странице ведь может быть больше одной карты)
-        map: map,
-    
-        // Пишем название маркера - появится если навести на него курсор и немного подождать
-        title: 'Наш маркер: Большой театр'
-        // Укажем свою иконку для маркера
-        icon: 'theatre_icon.png'
-    });
-
- }
+        marker = new google.maps.Marker({
+            position: coordinates,
+            map: map
+        });
+       
+}
