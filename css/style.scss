@@ -601,8 +601,16 @@ body {
    }
 
 
+   ////CARUSELL
 
 
+   .slider__item img{
+       max-height: 230px;
+   }
+
+  .slider__item--before {
+      padding-top: 40px;
+  }
 
 }
 
