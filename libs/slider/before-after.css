@@ -1,0 +1,55 @@
+.example__slider {
+    height: 400px;
+}
+.ba-slider {
+    position: relative;
+   
+}
+ 
+.ba-slider img {
+    width: 100%;
+    display:block;
+    max-width:none;
+
+}
+ 
+.ba-slider .resize {
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    background-color: #f2f2f2;
+
+}
+
+.resize {
+    overflow: hidden;
+    padding-bottom: 100px;
+}
+
+
+.ba-slider .handle { /* Thin line seperator */
+  position:absolute; 
+  left:50%;
+  top:145%;
+  bottom:0;
+  width:4px;
+  margin-left:-2px;
+ 
+  background: rgba(0,0,0,.5);
+  cursor: ew-resize;
+}
+ 
+.ba-slider .handle:after {  /* Big orange knob  */
+    position: absolute;
+    width: 49px;
+    height: 12px;
+    margin: -32px 0 0 -32px;
+    content: '';
+    background-color: #68b738;
+    border-radius: 20px;
+    
+}
+
+
