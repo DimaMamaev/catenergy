@@ -470,7 +470,7 @@ body {
        padding-left: 20px;
        padding-right: 20px;
    }
-   .page-main__example article {
+   .example__article{
        margin: 0;
        padding: 0;
        font-family: $oswald;
@@ -685,12 +685,13 @@ body {
     }
     .page-header__nav{
         padding: 0;
-        padding-top: 14px;
+        margin: 0;
     }
     .page-header-wrapper {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        margin-top: 25px;
     }
 
     .usernav__title {
@@ -699,9 +700,6 @@ body {
         align-items: center;
         text-align: center;
         justify-content: space-around;
-        width: 516px;
-        padding-top: 10px;
-     
     }
 
     .usernav__item {
@@ -709,9 +707,14 @@ body {
         line-height: 25px;
         font-weight: normal;
         border: none;
+        margin-left: 25px;
+        padding-top: 18px;
     }
 
-
+    .usernav__link--active {
+        border-bottom: 2px solid $green;
+        padding-bottom: 10px;
+    }  
     
     .page-header{
         padding-left: 30px;
@@ -739,10 +742,10 @@ body {
         font-weight: 400;
         text-align: start;
         color: black;
-        padding-right: 130px;
         padding-left: 115px;
         margin-bottom: 40px;
         display: block;
+        height: 120px;
     }
 
     
@@ -780,9 +783,7 @@ body {
         padding-bottom: 17px;
     }
 
-    .usernav__item--active {
-        border-bottom: 2px solid $green;
-    }  
+    
 
     ////MAIN
 
@@ -1007,7 +1008,7 @@ body {
 
     
 
-    .page-header__nav, 
+     
     .page-header__title{
         padding: 0;
         margin: 0;
@@ -1026,7 +1027,15 @@ body {
         position: relative;
         z-index: 2;
     }
-
+    .page-header-wrapper {
+        padding: 0;
+        margin: 0;
+        margin-left: 70px;
+        margin-right: 70px;
+        margin-top: 55px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
     .page-header::before {
         position: absolute;
         content: '';
@@ -1039,7 +1048,7 @@ body {
         top: 0;
         bottom: 0;
         right: -80px;
-        left: calc(50% + 40px);
+        left:50%;
         
     }
 
@@ -1048,7 +1057,9 @@ body {
         padding: 0;
         overflow: hidden;
     }
-
+    .usernav__item {
+        margin-left: 30px;
+    }
     .usernav__item  a {
         font-size: 20px;
         line-height: 25px;
@@ -1101,12 +1112,9 @@ body {
     .page-main {
         margin: 0;
         padding: 0;
-        margin-left: 70px;
-        margin-right: 70px;
-        padding-left: 40px;
-        padding-right: 40px;
         margin-top: 65px;
     }
+
 
     .page-main__program {
         margin: 0;
@@ -1114,6 +1122,10 @@ body {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        margin-left: 70px;
+        margin-right: 70px;
+        padding-left: 40px;
+        padding-right: 40px;
     }
     .program__item {
         width: 570px;
@@ -1127,6 +1139,7 @@ body {
         line-height: 37px;
     }
     .program__item p {
+        height: 90px;
         margin-right: 50px;
     }
 
@@ -1162,6 +1175,10 @@ body {
     .page-main__deteils {
         padding: 0;
         margin-top: 80px;
+        margin-left: 70px;
+        margin-right: 70px;
+        padding-left: 40px;
+        padding-right: 40px;
     }
 
     .page-main__deteils h2 {
@@ -1176,12 +1193,15 @@ body {
     .deteils__item {
         margin: 0;
         padding: 0;
-        margin-right: 40px;
+        margin-right: 33px;
         width: 245px;
         flex-wrap: nowrap;
     }
     .deteils__item:nth-child(4) {
         margin-right: 0;
+    }
+    .deteils__item::after {
+        left: 44%;
     }
     .item__text {
         padding: 0;
@@ -1191,10 +1211,33 @@ body {
         font-size: 16px;
     }
 
-
-
-
-
+    /////page-main__example
+    .page-main__example {
+        margin: 0;
+        padding: 0;
+        background-color:$grey;
+    }
+    .page-main__example-wrapper {
+        background-color:white;
+    }
+    
+    .example__wrapper {
+        margin: 0;
+        padding: 0;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-left: 70px;
+        margin-right: 70px;
+        background-color:$grey;
+    }
+    .example__article {
+        background-color: white;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-left: 70px;
+        margin-right: 70px;
+        overflow: hidden;
+    }
 
 
 
