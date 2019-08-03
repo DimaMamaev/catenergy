@@ -1,0 +1,16 @@
+//////MAP
+@media (min-width:$mobile-width) {
+    #map {
+        width: 100%;
+        height: 360px;
+    }
+}
+
+
+@media (min-width:$tablet-width) {
+    #map {
+        width: 100%;
+        height: 400px;
+    }
+}
+
