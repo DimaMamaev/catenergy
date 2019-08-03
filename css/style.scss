@@ -1,4 +1,5 @@
 //GLOBAL
+@import "normalize.scss";
 
 //size
 $dekstop-width: 1300px;
@@ -1212,32 +1213,29 @@ body {
     }
 
     /////page-main__example
+    
     .page-main__example {
         margin: 0;
         padding: 0;
-        background-color:$grey;
+        background-color: white;
     }
     .page-main__example-wrapper {
-        background-color:white;
+        padding: 0;
+        margin: 0;
+    }
+    .example__wrapper {
+        background-color: $grey;
+    }
+
+    
+    .example__section,
+    .example__article {
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-left: 70px;
+        margin-right: 70px;
     }
     
-    .example__wrapper {
-        margin: 0;
-        padding: 0;
-        padding-left: 40px;
-        padding-right: 40px;
-        margin-left: 70px;
-        margin-right: 70px;
-        background-color:$grey;
-    }
-    .example__article {
-        background-color: white;
-        padding-left: 40px;
-        padding-right: 40px;
-        margin-left: 70px;
-        margin-right: 70px;
-        overflow: hidden;
-    }
 
 
 
