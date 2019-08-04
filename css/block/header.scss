@@ -1,0 +1,445 @@
+/////mobile width
+.page-header {
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
+
+.page-header__nav, 
+.page-header__title{
+    padding: 0;
+    margin: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.page-header__nav{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding-top: 12px;
+    text-align: center;
+    padding-bottom: 15px;
+}
+.nav__link--mobile {
+    display: flex;
+    align-items: center;
+}
+.nav__link {
+    opacity: 1;
+}
+.nav__link:hover {
+    opacity: 0.8;
+}
+.nav__link:active {
+    opacity: 0.6;
+}
+.page-header__btn {
+    padding: 0;
+    margin: 0;
+    width: 30px;
+    height: 30px;
+    margin-top: 3px;
+    position: relative;
+}
+
+.menu-btn {
+    position: absolute;
+    content: '';
+    width: 26px;
+    height: 2px;
+    background-color: black;
+    display: block;
+    top: 14px;
+    left: 3px;
+}
+
+.menu-btn::before {
+    position: absolute;
+    content: '';
+    width: 26px;
+    height: 2px;
+    background-color: black;
+    display: block;
+    top: 8px;
+}
+
+.menu-btn::after {
+    position: absolute;
+    content: '';
+    width: 26px;
+    height: 2px;
+    background-color: black;
+    display: block;
+    top: -8px;
+}
+
+.menu-btn--active {
+    position: absolute;
+    content: '';
+    width: 26px;
+    height: 2px;
+    background-color: black;
+    display: block;
+    top: 14px;
+    left: 3px;
+    transform: rotate(45deg);
+    transition: all .5s;
+}
+
+
+.menu-btn--active::after {
+    position: absolute;
+    content: '';
+    width: 26px;
+    height: 2px;
+    background-color: black;
+    display: block;
+    top: 0;
+    transform: rotate(-90deg);
+    transition: all .5s;
+}
+
+.menu-btn--active::before {
+    display: none;
+}
+
+.page-header__usernav--active {
+    display: none;
+}
+
+.usernav__title {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: $oswald;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.usernav__item {
+    margin: 0;
+    padding: 0;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    border-top: 1px solid $greyline;
+}
+.usernav__link {
+    opacity: 1;
+}
+.usernav__link:hover {
+    opacity: 0.8;
+}
+.usernav__link:active {
+    opacity: 0.6;
+}
+.page-header__title {
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(to top,#fff 97px,transparent 97px),url(../img/index-background-mobile.png),linear-gradient(to top,#fff 197px,#61a63c 197px);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+    padding-top: 25px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.title-content {
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.page-header__title h2 {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+    font-family: $oswald;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: normal;
+    text-align: center;
+    color: white;
+}
+
+
+.page-header__title p {
+    font-family: $oswald;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+}
+
+.title__img {
+    text-align: center;
+    
+}
+.title-content {
+    position: relative;
+    text-align: center;
+}
+
+.title__btn {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    height: 40px;
+    background-color: $green;
+    font-family: $oswald;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    margin-top: 10px;
+    width: 100%; 
+    opacity: 1;
+    outline: none;
+}
+.title__btn:hover {
+    border: none;
+    background-color: #5eaa2f;
+}
+.title__btn:active {
+    border: none;
+    color: #88c066;
+}
+
+////TABLET
+
+
+@media (min-width:$tablet-width) {
+
+    .page-header__btn,
+    .nav__log-mobile {
+        display: none;
+    }
+     
+    .nav__logo {
+        width: 173px;
+        height: 58px;
+    }
+    
+
+    .page-header__usernav {
+        display: block;
+    }
+    .page-header__nav{
+        padding: 0;
+        margin: 0;
+    }
+    .page-header-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 25px;
+    }
+
+    .usernav__title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        justify-content: space-around;
+    }
+
+    .usernav__item {
+        font-size: 18px;
+        line-height: 25px;
+        font-weight: normal;
+        border: none;
+        margin-left: 25px;
+        padding-top: 18px;
+    }
+
+    .usernav__link--active {
+        border-bottom: 2px solid $green;
+        padding-bottom: 10px;
+    }  
+    
+    .page-header{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+
+    .page-header__title {
+        background: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        padding-top: 50px;
+    }
+    .title-content {
+        margin: 0;
+        padding: 0;
+    }
+
+    .page-header__title h2 {
+        margin: 0;
+        padding: 0;
+        font-size: 60px;
+        line-height: 60px;
+        font-weight: 400;
+        text-align: start;
+        color: black;
+        padding-left: 115px;
+        margin-bottom: 40px;
+        display: block;
+        height: 120px;
+    }
+
+    
+    .page-header__title p {
+        margin: 0;
+        padding: 0;
+        font-family: $oswald;
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: 400;
+        text-align: left;
+        text-transform: uppercase;
+        color: black;
+        padding-left: 120px;
+        margin-bottom: 20px;
+    }
+
+    .page-header__title button {
+        padding: 0;
+        margin: 0;
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: white;
+        display: block;
+        position: absolute;
+        top: 225px;
+        left: 120px;
+        width: 250px;
+        height: 53px;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 17px; 
+        padding-bottom: 17px;
+    }
+}
+
+
+/////DEKSTOP
+
+
+@media (min-width:$dekstop-width) {
+
+    .page-header__title{
+        padding: 0;
+        margin: 0;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .page-header__nav picture {
+        width: 202px;
+        height: 59px;
+        padding-top: 15px;
+    }
+
+
+    .page-header {
+        position: relative;
+        z-index: 2;
+    }
+    .page-header-wrapper {
+        padding: 0;
+        margin: 0;
+        margin-left: 70px;
+        margin-right: 70px;
+        margin-top: 55px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .page-header::before {
+        position: absolute;
+        content: '';
+        background-image: url(../img/index-background-desktop.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right center;
+        background-color: #63a73a;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        right: -80px;
+        left:50%;
+        
+    }
+
+    .page-header--index {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    .usernav__item {
+        margin-left: 30px;
+    }
+    .usernav__item  a {
+        font-size: 20px;
+        line-height: 25px;
+        font-weight: normal;
+        border: none;
+        color: white;
+    }
+
+    .usernav__item--active {
+        border-bottom: 2px solid white;
+    }
+
+    .page-header__title h2 {
+        padding: 0;
+        margin: 0;
+        padding-left: 80px;
+        margin-bottom: 45px;
+        padding-top: 105px;
+        font-size: 60px;
+        line-height: 60px;
+        font-weight: normal;
+        width: 570px;
+    }
+
+    .page-header__title p {
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: normal;
+        padding: 0;
+        margin: 0;
+        padding-left: 80px;
+        margin-bottom: 290px;
+        
+    }
+
+    .page-header__title button {
+        top: 350px;
+        left: 80px;
+    }
+
+
+    .page-header__title picture {
+        position: absolute;
+        top: 25px;
+        left: calc(50% + 100px) ;
+    }
+
+}
