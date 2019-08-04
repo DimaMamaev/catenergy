@@ -7,6 +7,7 @@
 
 
 
+
 /////mobile width
 
     .page-header {
@@ -1183,16 +1184,57 @@
     
     .example__section,
     .example__article {
+        padding: 0;
+        margin: 0;
         padding-left: 40px;
         padding-right: 40px;
         margin-left: 70px;
         margin-right: 70px;
     }
-    
+    .example__article {
+        margin-top: 40px;
+        margin-bottom: 75px;
+        font-family: $oswald;
+        font-weight: normal;
+        font-size: 60px;
+        line-height: 60px;
+    }
 
+    .example__description {
+        padding-top: 70px;
+        padding-bottom: 70px;
+        width: 440px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: normal;
+    }
 
-
-
+    .example__data {
+        width: 380px;
+        padding: 0;
+        margin: 0;
+        padding-bottom: 70px;
+    }
+    .example__cost {
+        margin: 0;
+        text-align: left;
+        padding-bottom: 70px;
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .data__amount {
+        font-family: $oswald;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .data__property {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: normal;
+    }
 
 
 ////FOOTER
