@@ -371,6 +371,7 @@
         margin: 0;
         padding: 0;
         padding-top: 60px;
+        padding-bottom: 75px;
     }
     .related-products__title {
         font-size: 36px;
@@ -408,9 +409,22 @@
         background-position: 0% 100%;
     }
     .content__item--giftcard {
+        padding: 0;
+        margin: 0;
         display: flex;
+        padding-left: 90px;
+        padding-right: 125px;
+        justify-content: space-between;
     }
-
-
-
+    .content__giftcard {
+        padding-top: 65px;
+        padding-bottom: 70px;
+    }
+    .content__giftcard-description {
+        padding: 0;
+        margin: 0;
+        width: 165px;
+        text-align: left;
+        padding-top: 80px;
+    }
 }
