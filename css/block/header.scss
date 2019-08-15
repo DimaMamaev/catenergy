@@ -221,6 +221,17 @@
     color: #88c066;
 }
 
+
+////Catalog page
+
+.page-header--catalog {
+    border-bottom: 1px solid $greyline;
+}
+
+
+
+
+
 ////TABLET
 
 
@@ -235,8 +246,6 @@
         width: 173px;
         height: 58px;
     }
-    
-
     .page-header__usernav {
         display: block;
     }
@@ -338,6 +347,11 @@
         padding-right: 25px;
         padding-top: 17px; 
         padding-bottom: 17px;
+    }
+
+    //////Catalog page
+    .page-header {
+        border: none;
     }
 }
 
@@ -445,4 +459,13 @@
         left: calc(50% + 100px) ;
     }
 
+
+    /////Catalog page
+    .usernav__item--catalog a {
+        color: black;
+    }
+
+    .page-header--catalog::before { 
+        position: unset;
+    }
 }

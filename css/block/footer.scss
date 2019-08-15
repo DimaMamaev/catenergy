@@ -149,6 +149,9 @@
             margin: 0;
             border: none;
         }
+        .social__link {
+            text-align: left;
+        }
         .social__logo {
             margin-right: 125px;
         }
@@ -172,7 +175,11 @@
             margin-left: 25px;
             margin-right: 25px;
         }
-    
+        
+        /////catalog page
+        .page-footer__contacts--catalog {
+            background-color: $grey;
+        }
     
     }
 
