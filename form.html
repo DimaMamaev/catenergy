@@ -40,8 +40,8 @@
             </nav>
         </div>
     </header>
-    <main>
-        <form class="form" action="http://echo.htmlacademy.ru" method="post">
+    <main class="page__main">
+        <form class="main__form" action="http://echo.htmlacademy.ru" method="post">
             <section class="form__title">
                 <h1>Подбор программы</h1>
                 <p class="program-form__text"> Заполните анкету и мы подберем <br> программу питания для вашего кота</p>
@@ -49,20 +49,20 @@
             <fieldset class="form__cat-info">
                 <ul class="cat-info__section">
                     <li class="section__item">
-                        <label class="" >
-                            <span>Имя:*</span>
+                        <label class="section__label" >
+                            <span class="section__article">Имя:*</span>
                             <input type="text" class="section__input" name="Имя" placeholder="Барсик" maxlength="15" required>
                         </label>
                     </li>
                     <li class="section__item">
-                        <label class="" >
-                            <span>Вес (кг):*</span>
+                        <label class="section__label" >
+                            <span class="section__article">Вес (кг):*</span>
                             <input type="text" class="section__input" name="Вес" placeholder="7" maxlength="7" required>
                         </label>
                     </li>
                     <li class="section__item">
-                        <label class="" >
-                            <span>Возраст (лет):*</span>
+                        <label class="section__label" >
+                            <span class="section__article">Возраст (лет):*</span>
                             <input type="text" class="section__input" name="Возраст" placeholder="7" maxlength="7" required>
                         </label>
                     </li>
@@ -72,20 +72,20 @@
                 <ul class="nutrition-programm__parts">
                     <li class="parts__item">
                         <label class="parts__label">
-                            <input type="radio" class="parts__input" name="Программа" value="Похудение" checked>
-                            <span>Похудение</span>
+                            <input type="radio" class="parts__input visually-hidden" name="Программа" value="Похудение" checked>
+                            <span class="parts__article">Похудение</span>
                         </label>
                     </li>
                     <li class="parts__item">
                         <label class="parts__label">
-                            <input type="radio" class="parts__input" name="Программа" value="Набор массы" checked>
-                            <span>Набор массы</span>
+                            <input type="radio" class="parts__input visually-hidden" name="Программа" value="Набор массы">
+                            <span class="parts__article">Набор массы</span>
                         </label>
                     </li>
                     <li class="parts__item">
                         <label class="parts__label">
-                            <input type="radio" class="parts__input" name="Программа" value="Не знаю (нужен ваш совет)" checked>
-                            <span>Не знаю (нужен ваш совет)</span>
+                            <input type="radio" class="parts__input visually-hidden" name="Программа" value="Не знаю (нужен ваш совет)">
+                            <span class="parts__article">Не знаю (нужен ваш совет)</span>
                         </label>
                     </li>
                 </ul>
@@ -95,20 +95,20 @@
                 <ul class="contacts__requisites">
                     <li class="requisites__item">
                         <label class="requisites__label">
-                            <span>e-mail:*</span>
+                            <span class="requisites__article">e-mail:*</span>
                             <input type="email" class="item__input" name="e-mail" placeholder="kuklachev@gmail.com" maxlength="15" required>
                         </label>
                     </li>
                     <li class="requisites__item">
                         <label class="requisites__label">
-                            <span>телефон:*</span>
+                            <span class="requisites__article">телефон:*</span>
                             <input type="tel" class="item__input" name="Телефон" placeholder="8 (960) 900-60-90" maxlength="15" required>
                         </label>
                     </li>
                 </ul>
             </fieldset>
             <fieldset class="form__comments">
-                <h2 class="comments__title">Комментарий</h2>
+                <h2 class="comments__article">Комментарий</h2>
                 <label class="comments__label">
                     <textarea class="comments__input" name="Комментарий" id="Комментарий" cols="28" rows="5" maxlength="450" placeholder="Расскажите обо всех повадках кота"></textarea>
                 </label>
@@ -118,32 +118,32 @@
                 <ul class="additionally__elements">
                     <li class="elements__item">
                         <label class="elements__label">
-                            <input type="checkbox" class="elements__input" name="sweetener" checked>
-                            <span>Сахарозаменитель</span>
+                            <input type="checkbox" class="elements__input visually-hidden" name="sweetener" checked>
+                            <span class="elements__article">Сахарозаменитель</span>
                         </label>
                     </li>
                     <li class="elements__item">
                         <label class="elements__label">
-                            <input type="checkbox" class="elements__input" name="water">
-                            <span>Питьевая вода</span>
+                            <input type="checkbox" class="elements__input visually-hidden" name="water">
+                            <span class="elements__article">Питьевая вода</span>
                         </label>
                     </li>
                     <li class="elements__item">
                         <label class="elements__label">
-                            <input type="checkbox" class="elements__input" name="milk">
-                            <span>Молоко</span>
+                            <input type="checkbox" class="elements__input visually-hidden" name="milk">
+                            <span class="elements__article">Молоко</span>
                         </label>
                     </li>
                     <li class="elements__item">
                         <label class="elements__label">
-                            <input type="checkbox" class="elements__input" name="vitamins">
-                            <span>Витамины</span>
+                            <input type="checkbox" class="elements__input visually-hidden" name="vitamins">
+                            <span class="elements__article">Витамины</span>
                         </label>
                     </li>
                 </ul>
             </fieldset>
             <section class="form__request">
-                <button class="request__button">Отправить заявку</button>
+                <button class="request__btn">Отправить заявку</button>
                 <p class="request_description"><sup>*</sup>- Обязательные поля</p>
             </section>
         </form>

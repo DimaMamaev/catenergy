@@ -190,7 +190,8 @@
 }
 
 .title__btn,
-.link__btn {
+.link__btn,
+.request__btn {
     padding: 0;
     margin: 0;
     text-align: center;
@@ -211,12 +212,14 @@
     outline: none;
 }
 .title__btn:hover,
-.link__btn:hover {
+.link__btn:hover,
+.request__btn:hover {
     border: none;
     background-color: #5eaa2f;
 }
 .title__btn:active,
-.link__btn:active {
+.link__btn:active,
+.request__btn:active {
     border: none;
     color: #88c066;
 }
