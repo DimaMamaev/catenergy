@@ -41,18 +41,112 @@
         </div>
     </header>
     <main>
-        <h1>Подбор программы</h1>
-        <section class="main__">
-        </section>
-        <section class="main__">
-            <h2 class="__article">Контактные данные (владельца кота)</h2>
-        </section>
-        <section class="main__">
-            <h2 class="__article">Комментарий</h2>
-        </section>
-        <section class="main__">
-            <h2 class="__article">Дополнительно</h2>
-        </section>
+        <form class="form" action="http://echo.htmlacademy.ru" method="post">
+            <section class="form__title">
+                <h1>Подбор программы</h1>
+                <p class="program-form__text"> Заполните анкету и мы подберем <br> программу питания для вашего кота</p>
+            </section>
+            <fieldset class="form__cat-info">
+                <ul class="cat-info__section">
+                    <li class="section__item">
+                        <label class="" >
+                            <span>Имя:*</span>
+                            <input type="text" class="section__input" name="Имя" placeholder="Барсик" maxlength="15" required>
+                        </label>
+                    </li>
+                    <li class="section__item">
+                        <label class="" >
+                            <span>Вес (кг):*</span>
+                            <input type="text" class="section__input" name="Вес" placeholder="7" maxlength="7" required>
+                        </label>
+                    </li>
+                    <li class="section__item">
+                        <label class="" >
+                            <span>Возраст (лет):*</span>
+                            <input type="text" class="section__input" name="Возраст" placeholder="7" maxlength="7" required>
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="form__nutrition-programm">
+                <ul class="nutrition-programm__parts">
+                    <li class="parts__item">
+                        <label class="parts__label">
+                            <input type="radio" class="parts__input" name="Программа" value="Похудение" checked>
+                            <span>Похудение</span>
+                        </label>
+                    </li>
+                    <li class="parts__item">
+                        <label class="parts__label">
+                            <input type="radio" class="parts__input" name="Программа" value="Набор массы" checked>
+                            <span>Набор массы</span>
+                        </label>
+                    </li>
+                    <li class="parts__item">
+                        <label class="parts__label">
+                            <input type="radio" class="parts__input" name="Программа" value="Не знаю (нужен ваш совет)" checked>
+                            <span>Не знаю (нужен ваш совет)</span>
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="form__contacts">
+                <h2 class="contacts__article">Контактные данные (владельца кота)</h2>
+                <ul class="contacts__requisites">
+                    <li class="requisites__item">
+                        <label class="requisites__label">
+                            <span>e-mail:*</span>
+                            <input type="email" class="item__input" name="e-mail" placeholder="kuklachev@gmail.com" maxlength="15" required>
+                        </label>
+                    </li>
+                    <li class="requisites__item">
+                        <label class="requisites__label">
+                            <span>телефон:*</span>
+                            <input type="tel" class="item__input" name="Телефон" placeholder="8 (960) 900-60-90" maxlength="15" required>
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="form__comments">
+                <h2 class="comments__title">Комментарий</h2>
+                <label class="comments__label">
+                    <textarea class="comments__input" name="Комментарий" id="Комментарий" cols="28" rows="5" maxlength="450" placeholder="Расскажите обо всех повадках кота"></textarea>
+                </label>
+            </fieldset>
+            <fieldset class="form__additionally">
+                <h2 class="additionally__article">Дополнительно</h2>
+                <ul class="additionally__elements">
+                    <li class="elements__item">
+                        <label class="elements__label">
+                            <input type="checkbox" class="elements__input" name="sweetener" checked>
+                            <span>Сахарозаменитель</span>
+                        </label>
+                    </li>
+                    <li class="elements__item">
+                        <label class="elements__label">
+                            <input type="checkbox" class="elements__input" name="water">
+                            <span>Питьевая вода</span>
+                        </label>
+                    </li>
+                    <li class="elements__item">
+                        <label class="elements__label">
+                            <input type="checkbox" class="elements__input" name="milk">
+                            <span>Молоко</span>
+                        </label>
+                    </li>
+                    <li class="elements__item">
+                        <label class="elements__label">
+                            <input type="checkbox" class="elements__input" name="vitamins">
+                            <span>Витамины</span>
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+            <section class="form__request">
+                <button class="request__button">Отправить заявку</button>
+                <p class="request_description"><sup>*</sup>- Обязательные поля</p>
+            </section>
+        </form>
     </main>
         <footer class="page-footer">
             <h1 class="visually-hidden">Наши контакты</h1>
