@@ -11,10 +11,16 @@
 .page__main {
     margin: 0;
     padding: 0;
+}
+.form__title,
+.form__cat-info,
+.form__contacts,
+.form__comments,
+.form__additionally,
+.form__request {
     padding-left: 20px;
     padding-right: 20px;
 }
-
 
 ///////form__title
 
@@ -88,11 +94,17 @@ fieldset {
 
 //////form__nutrition-programm
 
-
+.form__nutrition-programm {
+    border-bottom: 1px solid $greyline;
+    border-top: 1px solid $greyline;
+}
 .nutrition-programm__parts {
     padding: 0;
     margin: 0;
+    padding-top: 30px;
     padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .parts__article {
     margin: 0;
@@ -140,7 +152,9 @@ input[type="radio"].visually-hidden {
 
 
 /////form__contacts
-
+.form__contacts {
+    padding-top: 30px;
+}
 .contacts__article,
 .comments__article,
 .additionally__article {
@@ -154,6 +168,8 @@ input[type="radio"].visually-hidden {
 .contacts__requisites {
     padding: 0;
     margin: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 .requisites__item {
     padding-bottom: 15px;
@@ -189,9 +205,14 @@ input[type="radio"].visually-hidden {
 }
 
 ////////form__comments
-
+.form__comments {
+    padding-bottom: 30px;
+}
 .comments__article {
     padding-bottom: 30px;
+}
+.comments__label {
+    display: flex;
 }
 .comments__input {
     margin: 0;
@@ -202,9 +223,16 @@ input[type="radio"].visually-hidden {
     font-weight: normal;
     width: 100%;
     text-transform: uppercase;
+    text-align: center;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /////form__additionally
+.additionally__article {
+    padding-bottom: 40px;
+}
 .additionally__elements {
     margin: 0;
     padding: 0;
@@ -221,7 +249,7 @@ input[type="radio"].visually-hidden {
 }
 .elements__item {
     position: relative;
-    padding-bottom: 25px;
+    padding-bottom: 30px;
 }
 
 input[type="checkbox"].visually-hidden {
@@ -246,11 +274,31 @@ input[type="checkbox"].visually-hidden {
       border: 1px solid #cdcdcd;
       background-color: #fff;
       box-sizing: border-box;
-      top: -5px;
+      top: -7px;
   }
   .elements__input:checked + .elements__article::before {
       background-image: url(../img/catalog/tick.png);
       background-size: 21px;
       background-repeat: no-repeat;
       background-position: center;
+  }
+  
+
+  //////form__request
+  .form__request {
+      padding-bottom: 35px;
+  }
+  .request_description {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      line-height: 16px;
+      font-weight: normal;
+      padding-top: 25px;
+  }
+  .request__btn {
+      font-size: 16px;
+      line-height: 20px;
   }
