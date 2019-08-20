@@ -46,50 +46,52 @@
                 <h1>Подбор программы</h1>
                 <p class="program-form__text"> Заполните анкету и мы подберем <br> программу питания для вашего кота</p>
             </section>
-            <fieldset class="form__cat-info">
-                <ul class="cat-info__section">
-                    <li class="section__item">
-                        <label class="section__label" >
-                            <span class="section__article">Имя:*</span>
-                            <input type="text" class="section__input" name="Имя" placeholder="Барсик" maxlength="15" required>
-                        </label>
-                    </li>
-                    <li class="section__item">
-                        <label class="section__label" >
-                            <span class="section__article">Вес (кг):*</span>
-                            <input type="text" class="section__input" name="Вес" placeholder="7" maxlength="7" required>
-                        </label>
-                    </li>
-                    <li class="section__item">
-                        <label class="section__label" >
-                            <span class="section__article">Возраст (лет):*</span>
-                            <input type="text" class="section__input" name="Возраст" placeholder="7" maxlength="7" required>
-                        </label>
-                    </li>
-                </ul>
-            </fieldset>
-            <fieldset class="form__nutrition-programm">
-                <ul class="nutrition-programm__parts">
-                    <li class="parts__item">
-                        <label class="parts__label">
-                            <input type="radio" class="parts__input visually-hidden" name="Программа" value="Похудение" checked>
-                            <span class="parts__article">Похудение</span>
-                        </label>
-                    </li>
-                    <li class="parts__item">
-                        <label class="parts__label">
-                            <input type="radio" class="parts__input visually-hidden" name="Программа" value="Набор массы">
-                            <span class="parts__article">Набор массы</span>
-                        </label>
-                    </li>
-                    <li class="parts__item">
-                        <label class="parts__label">
-                            <input type="radio" class="parts__input visually-hidden" name="Программа" value="Не знаю (нужен ваш совет)">
-                            <span class="parts__article">Не знаю (нужен ваш совет)</span>
-                        </label>
-                    </li>
-                </ul>
-            </fieldset>
+            <div class="form__wrapper">
+                <fieldset class="form__cat-info">
+                    <ul class="cat-info__section">
+                        <li class="section__item">
+                            <label class="section__label" >
+                                <span class="section__article">Имя:*</span>
+                                <input type="text" class="section__input" name="Имя" placeholder="Барсик" maxlength="15" required>
+                            </label>
+                        </li>
+                        <li class="section__item">
+                            <label class="section__label" >
+                                <span class="section__article">Вес (кг):*</span>
+                                <input type="text" class="section__input" name="Вес" placeholder="7" maxlength="7" required>
+                            </label>
+                        </li>
+                        <li class="section__item">
+                            <label class="section__label" >
+                                <span class="section__article">Возраст (лет):*</span>
+                                <input type="text" class="section__input" name="Возраст" placeholder="7" maxlength="7" required>
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset class="form__nutrition-programm">
+                    <ul class="nutrition-programm__parts">
+                        <li class="parts__item">
+                            <label class="parts__label">
+                                <input type="radio" class="parts__input visually-hidden" name="Программа" value="Похудение" checked>
+                                <span class="parts__article">Похудение</span>
+                            </label>
+                        </li>
+                        <li class="parts__item">
+                            <label class="parts__label">
+                                <input type="radio" class="parts__input visually-hidden" name="Программа" value="Набор массы">
+                                <span class="parts__article">Набор массы</span>
+                            </label>
+                        </li>
+                        <li class="parts__item">
+                            <label class="parts__label">
+                                <input type="radio" class="parts__input visually-hidden" name="Программа" value="Не знаю (нужен ваш совет)">
+                                <span class="parts__article">Не знаю (нужен ваш совет)</span>
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+            </div>
             <fieldset class="form__contacts">
                 <h2 class="contacts__article">Контактные данные (владельца кота)</h2>
                 <ul class="contacts__requisites">

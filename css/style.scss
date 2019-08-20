@@ -6,299 +6,209 @@
 @import "block/main.scss";
 @import "block/footer.scss";
 @import "block/map.scss";
-
-
-.page__main {
-    margin: 0;
-    padding: 0;
-}
-.form__title,
-.form__cat-info,
-.form__contacts,
-.form__comments,
-.form__additionally,
-.form__request {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-///////form__title
-
-.form__title h1 {
-    margin: 0;
-    padding: 0;
-    font-family: $oswald;
-    font-size: 36px;
-    line-height: 60px;
-    font-weight: normal;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-.form__title p {
-    margin: 0;
-    padding: 0;
-    font-family: $oswald;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: normal;
-    text-transform: uppercase;
-    padding-bottom: 40px;
-}
-fieldset {
-    margin: 0;
-    padding: 0;
-    border: none;
-}
+@import "block/form.scss";
 
 
 
-////////form__cat-info
-
-.cat-info__section {
-    padding: 0;
-    margin: 0;
-    padding-bottom: 5px;
-}
-.section__item {
-    padding-bottom: 15px;
-}
-.section__label {
-    margin: 0;
-    padding: 0;
-    font-family: $oswald;
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: normal;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.section__input {
-    color: #444444;
-    text-transform: uppercase;
-    padding: 0;
-    margin: 0;
-    padding-left: 15px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    flex: 1 0 70px; 
-    margin-left: 15px;
-    border: 1px solid $greyline; 
-}
-.section__article {
-    padding: 0;
-    margin: 0;
-}
 
 
-//////form__nutrition-programm
+@media (min-width:$tablet-width) {
+    .form__title,
+    .form__cat-info,
+    .form__contacts,
+    .form__comments,
+    .form__additionally,
+    .form__request {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .form__title h1 {
+        font-size: 60px;
+        line-height: 60px;
+        padding-top: 60px;
+        padding-bottom: 45px;
+    } 
+    .program-form__text {
+        font-size: 20px;
+        line-height: 30px;
+        padding-bottom: 65px;
+        padding-left: 40px;
+    }
+    /////form__cat-info
 
-.form__nutrition-programm {
-    border-bottom: 1px solid $greyline;
-    border-top: 1px solid $greyline;
-}
-.nutrition-programm__parts {
-    padding: 0;
-    margin: 0;
-    padding-top: 30px;
-    padding-bottom: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-.parts__article {
-    margin: 0;
-    padding: 0;
-    font-family: $oswald;
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: normal;
-    text-transform: uppercase;
-    position: relative;
-    padding-left: 45px;
-}
-.parts__item {
-    padding-bottom: 30px;
-}
+    .form__cat-info {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    .section__label {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .cat-info__section {
+        padding-bottom: 55px;
+    }
+    .section__item {
+        padding-bottom: 20px;
+    }
+    //////form__nutrition-programm
+    .form__nutrition-programm {
+        border: 1px solid $greyline;
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+    .nutrition-programm__parts {
+        padding-top: 35px;
+        padding-bottom: 5px;
+    }
+    .parts__article {
+        font-size: 20px;
+        line-height: 20px;
+        padding-left: 90px;
+    }
+    .parts__input:checked + .parts__article::before {
+        background-image: radial-gradient(#68b738 0, #68b738 9px, #ffffff 11px, #ffffff 100%);
+    }
+    .parts__article::before {
+        width: 40px;
+        height: 40px;
+        left: 15px;
+    }
+    //////form__contacts
+    .form__contacts {
+        margin-right: 30px;
+        margin-left: 30px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 75px;
+    }
+    .contacts__article {
+        padding: 0;
+        font-size: 36px;
+        line-height: 36px;
+    }
+    .requisites__label {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .contacts__requisites {
+        padding-top: 70px;
+        padding-bottom: 50px;
+    }
+    .requisites__item {
+        padding-bottom: 20px;
+    }
 
-input[type="radio"].visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  clip: rect(0 0 0 0);
-}
+    ////////form__comments
+    .form__comments {
+        margin-right: 30px;
+        margin-left: 30px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 70px;
+    }
+    .comments__article {
+        font-size: 36px;
+        line-height: 36px;
+    }   
+    .comments__input {
+        font-size: 20px;
+        line-height: 30px;
+        text-align: left;
+        padding-left: 20px;
+        padding-top: 15px;    
+    }
+   
+    /////form__additionally
+    .form__additionally {
+        margin-right: 30px;
+        margin-left: 30px;
+        padding-left: 40px;
+        padding-right: 40px; 
+    }
+    .additionally__article {
+        font-size: 36px;
+        line-height: 36px;
+    }
+    .elements__article::before {
+        width: 40px;
+        height: 40px;
+    }
+    .elements__article {
+        font-size: 20px;
+        line-height: 20px;
+        padding-left: 60px;
+    }
+    .additionally__elements {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .elements__item {
+        width: 235px;
+        padding-right: 78px;
+        padding-bottom: 50px;
+    }
+    /////////form__request
 
-.parts__article::before {
-    display: block;
-    position: absolute;
-    content: "";
-    flex-shrink: 0;
-    margin-right: 15px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #cdcdcd;
-    background-color: #fff;
-    box-sizing: border-box;
-    border-radius: 50%;
-    top: -5px;
-}
-.parts__input:checked + .parts__article::before {
-    background-image: radial-gradient($green 0, $green 6px, #ffffff 7px, #ffffff 100%);
-}
-
-
-/////form__contacts
-.form__contacts {
-    padding-top: 30px;
-}
-.contacts__article,
-.comments__article,
-.additionally__article {
-    margin: 0;
-    padding: 0;
-    font-family: $oswald;
-    font-size: 24px;
-    line-height: 24px;
-    font-weight: normal;
-}
-.contacts__requisites {
-    padding: 0;
-    margin: 0;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-.requisites__item {
-    padding-bottom: 15px;
-}
-.requisites__label {
-    margin: 0;
-    padding: 0;
-    font-family: $oswald;
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: normal;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.item__input {
-    color: #444444;
-    text-transform: uppercase; 
-    padding: 0;
-    margin: 0;
-    padding-left: 15px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    flex: 1 0 70px; 
-    margin-left: 15px;
-    border: 1px solid $greyline;
-}
-
-.requisites__article {
-    padding: 0;
-    margin: 0;
-}
-
-////////form__comments
-.form__comments {
-    padding-bottom: 30px;
-}
-.comments__article {
-    padding-bottom: 30px;
-}
-.comments__label {
-    display: flex;
-}
-.comments__input {
-    margin: 0;
-    padding: 0;
-    font-family: $oswald;
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: normal;
-    width: 100%;
-    text-transform: uppercase;
-    text-align: center;
-    padding-top: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-/////form__additionally
-.additionally__article {
-    padding-bottom: 40px;
-}
-.additionally__elements {
-    margin: 0;
-    padding: 0;
-}
-.elements__article {
-    margin: 0;
-    padding: 0;
-    font-family: $oswald;
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: normal;
-    text-transform: uppercase;
-    padding-left: 45px;
-}
-.elements__item {
-    position: relative;
-    padding-bottom: 30px;
+    .form__request {
+        margin-right: 30px;
+        margin-left: 30px;
+        padding-left: 40px;
+        padding-right: 40px; 
+        padding-bottom: 70px;
+        display: flex;
+    }
+    .request__btn {
+        margin: 0;
+    }
+    .request_description {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        padding-left: 60px;
+        padding-right: 130px;
+        width: 340px;
+    }
 }
 
-input[type="checkbox"].visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    border: 0;
-    clip: rect(0 0 0 0);
-  }
-  
-  .elements__article::before {
-      display: block;
-      position: absolute;
-      content: "";
-      flex-shrink: 0;
-      margin-right: 15px;
-      width: 30px;
-      height: 30px;
-      border: 1px solid #cdcdcd;
-      background-color: #fff;
-      box-sizing: border-box;
-      top: -7px;
-  }
-  .elements__input:checked + .elements__article::before {
-      background-image: url(../img/catalog/tick.png);
-      background-size: 21px;
-      background-repeat: no-repeat;
-      background-position: center;
-  }
-  
+@media (min-width:$dekstop-width) {
+    .form__title,
+    .form__cat-info,
+    .form__contacts,
+    .form__comments,
+    .form__additionally,
+    .form__request {
+        margin-left: 70px;
+        margin-right: 70px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .program-form__text {
+        padding-left: 0;
+    }
+    .form__wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 70px;
+        margin-right: 70px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .form__cat-info,
+    .form__nutrition-programm {
+        padding: 0;
+        margin: 0;
+        width: 610px;
+    }
+    .form__cat-info {
+        margin-right: 40px;
+    }
+    .form__nutrition-programm {
+        margin-left: 40px;
+        height: 203px;
+    }
+    .cat-info__section {
+        padding-bottom: 0;
+    }
 
-  //////form__request
-  .form__request {
-      padding-bottom: 35px;
-  }
-  .request_description {
-      margin: 0;
-      padding: 0;
-      text-align: center;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 14px;
-      line-height: 16px;
-      font-weight: normal;
-      padding-top: 25px;
-  }
-  .request__btn {
-      font-size: 16px;
-      line-height: 20px;
-  }
+
+}
