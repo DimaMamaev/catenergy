@@ -85,7 +85,19 @@
         padding: 0;
         font-size: 36px;
         line-height: 36px;
+        position: relative;
     }
+    .contacts__article::before {
+        position: absolute;
+        content: '';
+        height: 2px;
+        width: 5%;
+        background-color: $green;
+        display: block;
+        top: 50%;
+        left: -11%;
+    }
+
     .requisites__label {
         font-size: 20px;
         line-height: 20px;
@@ -97,6 +109,7 @@
     .requisites__item {
         padding-bottom: 20px;
     }
+    
 
     ////////form__comments
     .form__comments {
@@ -109,7 +122,19 @@
     .comments__article {
         font-size: 36px;
         line-height: 36px;
-    }   
+        position: relative;
+    }  
+    .comments__article::before {
+        position: absolute;
+        content: '';
+        height: 2px;
+        width: 5%;
+        background-color: $green;
+        display: block;
+        top: 25%;
+        left: -11%;
+    } 
+
     .comments__input {
         font-size: 20px;
         line-height: 30px;
@@ -128,7 +153,19 @@
     .additionally__article {
         font-size: 36px;
         line-height: 36px;
+        position: relative;
     }
+    .additionally__article::before {
+        position: absolute;
+        content: '';
+        height: 2px;
+        width: 5%;
+        background-color: $green;
+        display: block;
+        top: 25%;
+        left: -11%;
+    }
+
     .elements__article::before {
         width: 40px;
         height: 40px;
@@ -141,10 +178,10 @@
     .additionally__elements {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between
     }
     .elements__item {
         width: 235px;
-        padding-right: 78px;
         padding-bottom: 50px;
     }
     /////////form__request
@@ -206,9 +243,34 @@
         margin-left: 40px;
         height: 203px;
     }
+    .contacts__requisites {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .requisites__item {
+        width: 500px;
+    }
     .cat-info__section {
         padding-bottom: 0;
     }
-
-
+    .request__btn {
+        width: 570px;
+    }
+    .additionally__article {
+        padding-bottom: 55px;
+    }
+    .additionally__elements {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .elements__item {
+        padding: 0;
+        width: auto;
+        padding-bottom: 60px;
+    }
+    .request_description {
+        padding-left: 80px;
+    }
 }
