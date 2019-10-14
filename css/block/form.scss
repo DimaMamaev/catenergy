@@ -9,7 +9,19 @@
 .form__additionally,
 .form__request {
     padding-left: 20px;
-    padding-right: 20px;
+}
+
+.contacts__article::after,
+.comments__article::after,
+.additionally__article::after {
+    position: absolute;
+    content: '';
+    width: 30%;
+    height: 2px;
+    top: 50%;
+    right: 0;
+    background-color: $green;
+    display: block;
 }
 
 ///////form__title
@@ -48,6 +60,7 @@ fieldset {
     padding: 0;
     margin: 0;
     padding-bottom: 5px;
+    padding-right: 20px;
 }
 .section__item {
     padding-bottom: 15px;
@@ -166,6 +179,7 @@ input[type="radio"].visually-hidden {
     margin: 0;
     padding-top: 30px;
     padding-bottom: 30px;
+    padding-right: 20px;
 }
 .requisites__item {
     padding-bottom: 15px;
@@ -208,9 +222,13 @@ input[type="radio"].visually-hidden {
     padding-bottom: 30px;
     position: relative;
 }
-
+.comments__article::after {
+    width: 50%;
+    top: 30%;
+}
 .comments__label {
     display: flex;
+    padding-right: 20px;
 }
 .comments__input {
     margin: 0;
@@ -233,7 +251,10 @@ input[type="radio"].visually-hidden {
     padding-bottom: 40px;
     position: relative;
 }
-
+.additionally__article::after {
+    width: 40%;
+    top: 25%;
+}
 .additionally__elements {
     margin: 0;
     padding: 0;
@@ -288,6 +309,7 @@ input[type="checkbox"].visually-hidden {
   //////form__request
   .form__request {
       padding-bottom: 35px;
+      padding-right: 20px;
   }
   .request_description {
       margin: 0;
@@ -319,7 +341,6 @@ input[type="checkbox"].visually-hidden {
     .form__additionally,
     .form__request {
         padding-left: 30px;
-        padding-right: 30px;
     }
     .form__title h1 {
         font-size: 60px;
@@ -345,6 +366,7 @@ input[type="checkbox"].visually-hidden {
     }
     .cat-info__section {
         padding-bottom: 55px;
+        padding-right: 0;
     }
     .section__item {
         padding-bottom: 20px;
@@ -374,10 +396,8 @@ input[type="checkbox"].visually-hidden {
     }
     //////form__contacts
     .form__contacts {
-        margin-right: 30px;
         margin-left: 30px;
         padding-left: 40px;
-        padding-right: 40px;
         padding-top: 75px;
     }
     .contacts__article {
@@ -396,6 +416,9 @@ input[type="checkbox"].visually-hidden {
         top: 50%;
         left: -11%;
     }
+    .contacts__article::after {
+        width: 15%;
+    }
 
     .requisites__label {
         font-size: 20px;
@@ -404,6 +427,7 @@ input[type="checkbox"].visually-hidden {
     .contacts__requisites {
         padding-top: 70px;
         padding-bottom: 50px;
+        padding-right: 70px;
     }
     .requisites__item {
         padding-bottom: 20px;
@@ -412,10 +436,8 @@ input[type="checkbox"].visually-hidden {
 
     ////////form__comments
     .form__comments {
-        margin-right: 30px;
         margin-left: 30px;
         padding-left: 40px;
-        padding-right: 40px;
         padding-bottom: 70px;
     }
     .comments__article {
@@ -433,7 +455,12 @@ input[type="checkbox"].visually-hidden {
         top: 25%;
         left: -11%;
     } 
-
+    .comments__article::after {
+        width: 65%;
+    }
+    .comments__label {
+        padding-right: 70px;
+    }
     .comments__input {
         font-size: 20px;
         line-height: 30px;
