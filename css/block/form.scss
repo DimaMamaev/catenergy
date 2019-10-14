@@ -471,10 +471,8 @@ input[type="checkbox"].visually-hidden {
    
     /////form__additionally
     .form__additionally {
-        margin-right: 30px;
         margin-left: 30px;
         padding-left: 40px;
-        padding-right: 40px; 
     }
     .additionally__article {
         font-size: 36px;
@@ -491,6 +489,9 @@ input[type="checkbox"].visually-hidden {
         top: 25%;
         left: -11%;
     }
+    .additionally__article::after {
+        width: 60%;
+    }
 
     .elements__article::before {
         width: 40px;
@@ -504,7 +505,8 @@ input[type="checkbox"].visually-hidden {
     .additionally__elements {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between
+        justify-content: space-between;
+        padding-right: 70px;
     }
     .elements__item {
         width: 235px;
@@ -547,9 +549,7 @@ input[type="checkbox"].visually-hidden {
     .form__additionally,
     .form__request {
         margin-left: 70px;
-        margin-right: 70px;
         padding-left: 40px;
-        padding-right: 40px;
     }
     .program-form__text {
         padding-left: 0;
@@ -579,6 +579,16 @@ input[type="checkbox"].visually-hidden {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        padding-right: 110px;
+    }
+    .contacts__article::after {
+        width: 50%;
+    }
+    .comments__label {
+        padding-right: 110px;
+    }
+    .comments__article::after {
+        width: 80%;
     }
     .requisites__item {
         width: 500px;
@@ -592,10 +602,14 @@ input[type="checkbox"].visually-hidden {
     .additionally__article {
         padding-bottom: 55px;
     }
+    .additionally__article::after {
+        width: 75%;
+    }
     .additionally__elements {
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-between;
+        padding-right: 110px;
     }
     .elements__item {
         padding: 0;
