@@ -87,8 +87,17 @@ fieldset {
     padding-bottom: 15px;
     flex: 1 0 70px; 
     margin-left: 15px;
-    border: 1px solid $greyline; 
+    border: 1px solid $greyline;
+    outline: none; 
 }
+
+.section__input:hover {
+    border: 2px solid #cdcdcd;  
+}
+.section__input:focus {
+    border: 2px solid black;  
+}
+
 .section__article {
     padding: 0;
     margin: 0;
@@ -122,8 +131,11 @@ fieldset {
 }
 .parts__item {
     padding-bottom: 30px;
+    opacity: 1;
 }
-
+.parts__item:active {
+    opacity: 0.3;
+}
 input[type="radio"].visually-hidden {
   position: absolute;
   width: 1px;
@@ -207,6 +219,13 @@ input[type="radio"].visually-hidden {
     flex: 1 0 70px; 
     margin-left: 15px;
     border: 1px solid $greyline;
+    outline: none;
+}
+.item__input:hover {
+    border: 2px solid #cdcdcd;  
+}
+.item__input:focus {
+    border: 2px solid black;  
 }
 
 .requisites__article {
@@ -244,6 +263,13 @@ input[type="radio"].visually-hidden {
     padding-left: 15px;
     padding-right: 15px;
     border: 1px solid $greyline;
+    outline: none;
+}
+.comments__input:hover {
+    border: 2px solid #cdcdcd;  
+}
+.comments__input:focus {
+    border: 2px solid black;  
 }
 
 /////form__additionally
@@ -272,6 +298,10 @@ input[type="radio"].visually-hidden {
 .elements__item {
     position: relative;
     padding-bottom: 30px;
+    opacity: 1;
+}
+.elements__item:active {
+    opacity: 0.3;
 }
 
 input[type="checkbox"].visually-hidden {

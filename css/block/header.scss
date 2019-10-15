@@ -419,14 +419,13 @@
         font-size: 20px;
         line-height: 25px;
         font-weight: normal;
-        border: none;
         color: white;
     }
 
-    .usernav__item--active {
+    .usernav__link--main {
         border-bottom: 2px solid white;
     }
-
+   
     .page-header__title h2 {
         padding: 0;
         margin: 0;

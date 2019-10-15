@@ -376,6 +376,12 @@ padding-left: 5px;
     color: black;
     margin-top: 0;
 }
+.link__btn--full-catalog:hover {
+    background-color: #ebebeb;
+}
+.link__btn--full-catalog:active {
+    color: #b9b9b9;
+}
 .item__article--full-catalog {
     padding: 0;
     margin: 0;
@@ -766,9 +772,7 @@ padding-left: 5px;
         width: 265px;
     }
 
-    .link__btn--full-catalog {
-        color: #a8a8a8;
-    }
+    
     .item__icon {
         width: 60px;
         top: 88px;
