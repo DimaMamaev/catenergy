@@ -1438,7 +1438,7 @@ body {
   .program__icon {
     position: absolute;
     top: 65%;
-    left: 65%;
+    left: 63%;
     width: 200px;
     height: 200px;
     display: block;
@@ -1465,7 +1465,7 @@ body {
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 60px;
-    margin-right: 40%;
+    margin-right: 46%;
     border: none;
   }
   .program__link {
@@ -1486,6 +1486,9 @@ body {
   }
   .program__link:hover::before {
     left: 160px;
+  }
+  .page-main__deteils {
+    padding: 0;
   }
   .deteils__list {
     display: -webkit-box;
@@ -1760,10 +1763,6 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-left: 70px;
-    margin-right: 70px;
-    padding-left: 40px;
-    padding-right: 40px;
   }
   .program__item {
     width: 570px;
@@ -1774,10 +1773,12 @@ body {
   .program__item article {
     font-size: 36px;
     line-height: 37px;
+    margin-bottom: 0;
   }
   .program__item p {
     height: 90px;
     margin-right: 50px;
+    margin-bottom: 35px;
   }
   .program__link {
     margin: 0;
@@ -1807,10 +1808,6 @@ body {
   .page-main__deteils {
     padding: 0;
     margin-top: 80px;
-    margin-left: 70px;
-    margin-right: 70px;
-    padding-left: 40px;
-    padding-right: 40px;
   }
   .page-main__deteils h2 {
     font-size: 60px;
@@ -1860,8 +1857,7 @@ body {
   .example__wrapper {
     background-color: #f2f2f2;
   }
-  .example__section,
-  .example__article {
+  .example__section {
     padding: 0;
     margin: 0;
     padding-left: 40px;
