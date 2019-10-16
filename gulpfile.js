@@ -2,6 +2,7 @@ const gulp = require('gulp');
 const cleanCSS = require('gulp-clean-css');
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
+const svgSprite = require('gulp-svg-sprite');
 const browserSync = require('browser-sync').create();
 
 const cssFiles = [
@@ -42,6 +43,24 @@ function watch() {
 }
 
 
+function Sprite() {
+    return gulp.src('./img/*.svg')
+
+    .pipe(svgSprite({
+        mode: {
+            symbol: {
+                sprite: "../sprite.svg" 
+            }
+        }
+    }))
+    .pipe(gulp.dest('./img/'))
+}
+
+
+
+
+
 gulp.task('styles', styles);
 gulp.task('scripts', scripts);
 gulp.task('watch', watch);
+gulp.task('svgSprite', Sprite);
