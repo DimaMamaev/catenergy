@@ -3009,6 +3009,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .slider__image-div {
+  height: 240px;
   margin-bottom: 28px;
   text-align: center;
 }
@@ -3030,7 +3031,8 @@ input[type="checkbox"].visually-hidden {
 
 @media (min-width: 768px) {
   .slider__image-divider-before {
-    width: 50%;
+    width: 450px;
+    height: 530px;
     margin-top: -170px;
     overflow-x: hidden;
   }
@@ -3042,11 +3044,17 @@ input[type="checkbox"].visually-hidden {
   }
 }
 
+.slider__image-divider-after {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .slider__image-divider-after {
-    width: 50%;
+    width: 450px;
+    height: 530px;
     margin-top: -167px;
     overflow-x: hidden;
+    display: block;
   }
 }
 
@@ -3087,7 +3095,6 @@ input[type="checkbox"].visually-hidden {
 .slider__image-after {
   right: 50%;
   left: 50%;
-  display: none;
   width: 100vw;
   max-width: 100vw;
   margin-right: -50vw;
@@ -3166,8 +3173,8 @@ input[type="checkbox"].visually-hidden {
 .slider__button-before--active::before {
   content: "";
   position: absolute;
-  top: 7px;
-  left: 62px;
+  top: 8px;
+  left: 85px;
   z-index: 2;
   width: 34px;
   height: 6px;
@@ -3308,11 +3315,36 @@ input[type="checkbox"].visually-hidden {
   overflow-x: visible;
 }
 
+@media (min-width: 768px) {
+  .slider--displayed {
+    margin-left: 50%;
+  }
+}
+
 .slider--not-displayed {
   display: none;
 }
 
 .slider--left {
   left: 0;
+  margin-left: -20px;
+}
+
+@media (min-width: 768px) {
+  .slider--left {
+    margin-left: -100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-main__example {
+    background-color: #fff;
+  }
+  .promo__slider-div {
+    margin-top: 190px;
+  }
+  .slider__button-div {
+    margin-top: 120px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
