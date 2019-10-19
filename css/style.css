@@ -940,7 +940,7 @@ body {
   height: 3px;
   display: block;
   background-color: #444;
-  top: 48%;
+  top: 27px;
   left: 97px;
 }
 
@@ -950,7 +950,7 @@ body {
   border: 5.5px solid transparent;
   border-left-color: #444;
   display: block;
-  top: 40.5%;
+  top: 23px;
   left: 120px;
 }
 
@@ -2101,18 +2101,6 @@ body {
   text-align: center;
 }
 
-.social__link {
-  opacity: 1;
-}
-
-.social__link:hover {
-  opacity: 0.8;
-}
-
-.social__link:active {
-  opacity: 0.6;
-}
-
 .social__groups {
   padding: 0;
   margin: 0;
@@ -2140,11 +2128,8 @@ body {
   border-bottom: 2px solid #d9d9d9;
 }
 
-.groups__item {
-  padding: 0;
-  margin: 0;
-  margin-left: 18px;
-  margin-right: 18px;
+.groups__link {
+  padding-right: 15px;
 }
 
 .page-footer__rightholder {
