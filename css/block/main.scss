@@ -1049,16 +1049,18 @@ background-size: 26px 31px;
         padding: 0;
         margin: 0;
         border: none;
+        overflow: hidden;
     }
     .example__wrapper {
         background-color: $grey;
+        background: linear-gradient(90deg, #f2f2f2 50%, #eaeaea 100%);
     }
     .example__section {
         padding: 0;
         margin: 0;
     }
     .example__article {
-        margin-top: 40px;
+        margin-top: 65px;
         margin-bottom: 70px;
         margin-left: 40px;
         margin-right: 40px;
@@ -1080,10 +1082,9 @@ background-size: 26px 31px;
     }
 
     .example__data {
-        width: 380px;
         padding: 0;
         margin: 0;
-        padding-bottom: 70px;
+        padding-bottom: 55px;
     }
     .example__data-wrapper {
         flex-direction: column;
@@ -1091,6 +1092,7 @@ background-size: 26px 31px;
     }
     .example__cost {
         margin: 0;
+        padding: 0;
         text-align: left;
         padding-bottom: 70px;
         font-size: 20px;
@@ -1108,6 +1110,21 @@ background-size: 26px 31px;
         line-height: 14px;
         font-weight: normal;
     }
+    .example__section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .example__section-wrapper {
+        width: 570px;
+    }
+    .promo__slider-div {
+        width: 610px;
+    }
+    .data__property {
+        background-color: $grey;
+    }
+
 
 
     /////Catalog page

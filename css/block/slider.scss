@@ -13,7 +13,13 @@
     .slider__button-div {
         margin-top: 120px;
     }
-}
+  }
+  @media (min-width: $dekstop-width) {
+    .promo__slider-div {
+      margin-top: 0px;
+    }
+  }
+
   .slider__image-div {
     height: 240px;
     margin-bottom: 28px;
@@ -38,7 +44,7 @@
     }
   
     @media (min-width: $dekstop-width) {
-      width: 56%;
+      width: 86%;
     }
   }
   
@@ -54,7 +60,7 @@
     }
   
     @media (min-width: $dekstop-width) {
-      margin-top: -188px;
+      margin-top: -192px;
     }
   }
   
@@ -74,7 +80,7 @@
   
     @media (min-width: $dekstop-width) {
       position: relative;
-      top: -15px;
+      top: 0px;
       right: 0;
       left: -40px;
       margin-right: 0;
@@ -99,7 +105,7 @@
   
     @media (min-width: $dekstop-width) {
       position: relative;
-      left: -363px;
+      left: -335px;
       margin-right: 0;
       margin-left: 0;
     }
@@ -289,6 +295,9 @@
     @media (min-width: $tablet_width) {
       margin-left: 50%;
     }
+    @media (min-width: $dekstop-width) {
+      display: unset;
+    }
   }
   
   .slider--not-displayed {
@@ -300,6 +309,9 @@
     margin-left: -20px;
 
     @media (min-width: $tablet_width) {
+      margin-left: -100%;
+    }
+    @media (min-width: $dekstop-width) {
       margin-left: -100%;
     }
   }
