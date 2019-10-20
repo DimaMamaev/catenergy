@@ -949,6 +949,8 @@ background-size: 26px 31px;
     .page-main__program {
         margin: 0;
         padding: 0;
+        padding-left: 40px;
+        padding-right: 40px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -1002,12 +1004,13 @@ background-size: 26px 31px;
 
     .page-main__deteils {
         padding: 0;
+        padding-left: 40px;
+        padding-right: 40px;
         margin-top: 80px;
     }
 
     .page-main__deteils h2 {
         font-size: 60px;
-        margin-bottom: 70px;
     }
     .deteils__list {
         flex-direction: row;
@@ -1045,27 +1048,25 @@ background-size: 26px 31px;
     .page-main__example-wrapper {
         padding: 0;
         margin: 0;
+        border: none;
     }
     .example__wrapper {
         background-color: $grey;
     }
-
-    
     .example__section {
         padding: 0;
         margin: 0;
-        padding-left: 40px;
-        padding-right: 40px;
-        margin-left: 70px;
-        margin-right: 70px;
     }
     .example__article {
         margin-top: 40px;
-        margin-bottom: 75px;
+        margin-bottom: 70px;
+        margin-left: 40px;
+        margin-right: 40px;
         font-family: $oswald;
         font-weight: normal;
         font-size: 60px;
         line-height: 60px;
+        padding: 0;
     }
 
     .example__description {
@@ -1083,6 +1084,10 @@ background-size: 26px 31px;
         padding: 0;
         margin: 0;
         padding-bottom: 70px;
+    }
+    .example__data-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
     }
     .example__cost {
         margin: 0;
@@ -1106,12 +1111,7 @@ background-size: 26px 31px;
 
 
     /////Catalog page
-    .page-main {
-        padding-left: 40px;
-        padding-right: 40px;
-        margin-left: 70px;
-        margin-right: 70px;
-    }
+
     .main-catalog__item {
         width: 165px;
         padding-right: 40px;

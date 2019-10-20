@@ -157,7 +157,7 @@
 
 }
 
-.page-header__title h2 {
+.title__article {
     padding: 0;
     margin: 0;
     margin-bottom: 30px;
@@ -303,7 +303,7 @@
         padding: 0;
     }
 
-    .page-header__title h2 {
+    .title__article {
         margin: 0;
         padding: 0;
         font-size: 60px;
@@ -376,8 +376,6 @@
         height: 59px;
         padding-top: 15px;
     }
-
-
     .page-header {
         position: relative;
         z-index: 2;
@@ -385,8 +383,6 @@
     .page-header-wrapper {
         padding: 0;
         margin: 0;
-        margin-left: 70px;
-        margin-right: 70px;
         margin-top: 55px;
         padding-left: 40px;
         padding-right: 40px;
@@ -404,7 +400,8 @@
         bottom: 0;
         right: -80px;
         left:50%;
-        
+        width: 50%;
+        height: 696px;
     }
 
     .page-header--index {
@@ -426,7 +423,7 @@
         border-bottom: 2px solid white;
     }
    
-    .page-header__title h2 {
+    .title__article {
         padding: 0;
         margin: 0;
         padding-left: 80px;
@@ -446,22 +443,22 @@
         margin: 0;
         padding-left: 80px;
         margin-bottom: 290px;
-        
     }
-
     .page-header__title button {
         top: 350px;
-        left: 80px;
+        left: 120px;
     }
-
-
     .page-header__title picture {
         position: absolute;
-        top: 25px;
-        left: calc(50% + 100px) ;
+        top: 8px;
+        left: 39%;
+    }
+    .title-content {
+        position: unset;
     }
 
 
+    
     /////Catalog page
     .usernav__item--catalog a {
         color: black;
