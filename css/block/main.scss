@@ -129,7 +129,7 @@
 .page-main__deteils {
     margin-bottom: 40px;
 }
-.page-main__deteils h2 {
+.deteils__article {
    margin: 0;
    padding: 0;
    font-family: $oswald;
@@ -243,24 +243,22 @@ background-size: 26px 31px;
 
 
 .data__property {
-position: absolute;
-top: 95%;
-left: 25%;
-display: block;
-font-family: Arial, Helvetica, sans-serif;
-font-size: 12px;
-line-height: 12px;
-font-weight: normal;
-text-align: center;
-background-color: $grey;
-margin: 0;
-padding: 0;
-top: 83%;
-left: 0%;
-margin-left: 25px;
-margin-right: 25px;
-padding-right: 5px;
-padding-left: 5px;
+    position: absolute;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: normal;
+    text-align: center;
+    background-color: $grey;
+    margin: 0;
+    padding: 0;
+    top: 83%;
+    left: 0%;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-right: 5px;
+    padding-left: 5px;
 }
 
 
@@ -542,12 +540,12 @@ padding-left: 5px;
     .page-main {
         padding: 0;
         margin: 0;
-        padding-left: 30px;
-        padding-right: 30px;
     }
     .page-main__program {
         padding: 0;
         margin: 0;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
 
@@ -623,6 +621,16 @@ padding-left: 5px;
 
     .page-main__deteils {
         padding: 0;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-bottom: 0;
+    }
+    .deteils__article {
+        font-size: 60px;
+        line-height: 60px;
+        margin-bottom: 80px;
+        margin-top: 20px;
+
     }
     .deteils__list {
         display: flex;
@@ -660,7 +668,10 @@ padding-left: 5px;
         width: 80px;
         height: 80px;
     }
-
+    .deteils__item--eat,
+    .deteils__item--result {
+        margin-bottom: 25px;
+    }
     .item__text {
         margin: 0;
         padding: 0;
@@ -674,17 +685,70 @@ padding-left: 5px;
 
 
 //////page-main__example
+    .page-main__example {
+        background-color: #fff;
+    }
+    .page-main__example-wrapper {
+        padding: 0;
+        margin: 0;
+        border-top: 1px solid $greyline;
+    }
+    .example__article {
+        font-size: 60px;
+        line-height: 60px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .example__wrapper {
+        padding-left: 30px;
+        padding-right: 30px; 
+    }
+    .example__description {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .example__data-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .data__amount {
+        font-size: 30px;
+        line-height: 30px;
+        padding-right: 30px;
+        padding-left: 30px;
+        margin-right: 40px;
+        text-transform: uppercase;
+    }
+    .data__property {
+        margin: 0;
+        font-size: 14px;
+        line-height: 14px;
+        background-color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+        left: 17%;
+        text-transform: none;
+    }
+    .data__property--time {
+        left: 11%;
+    }
+    .example__cost {
+        font-size: 20px;
+        line-height: 20px;
+        padding-left: 9%;
+        text-align: end;
+        padding-bottom: 4%;
+    }
+
 
 
 
 
 
 //////CATALOG PAGE
-
-
-    .page-main {
-        padding: 0;
-        margin: 0;
+    .page-main__main-catalog {
         padding-left: 30px;
         padding-right: 30px;
     }
@@ -773,8 +837,6 @@ padding-left: 5px;
         padding-bottom: 85px;
         width: 265px;
     }
-
-    
     .item__icon {
         width: 60px;
         top: 88px;
@@ -792,6 +854,8 @@ padding-left: 5px;
         padding-top: 60px;
         padding-bottom: 75px;
         overflow: unset;
+        padding-left: 30px;
+        padding-right: 30px;
     }
     .related-products__title {
         font-size: 36px;

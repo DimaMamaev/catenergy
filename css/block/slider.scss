@@ -6,7 +6,14 @@
       background: linear-gradient(90deg, rgba(242, 242, 242, 1) 50%, rgba(234, 234, 234, 1) 100%);
     }
   }
-  
+  @media (min-width: $tablet_width) {
+    .promo__slider-div {
+        margin-top: 190px;
+    }
+    .slider__button-div {
+        margin-top: 120px;
+    }
+}
   .slider__image-div {
     height: 240px;
     margin-bottom: 28px;
@@ -41,7 +48,7 @@
     @media (min-width: $tablet_width) {
       width: 450px;
       height: 530px;
-      margin-top: -167px;
+      margin-top: -194px;
       overflow-x: hidden;
       display: block;
     }
@@ -61,8 +68,8 @@
   
     @media (min-width: $tablet_width) {
       width: 690px;
-      height: 517px;
-      margin-left: 16px;
+      height: 504px;
+      margin-left: -35px;
     }
   
     @media (min-width: $dekstop-width) {
@@ -141,7 +148,6 @@
   
     &--active {
       position: relative;
-      //триггер переключения слайдера
       &::before {
         content: "";
         position: absolute;
@@ -157,7 +163,7 @@
     }
   
     @media (min-width: $tablet_width) {
-      margin-left: 100px;
+      margin-left: 50px;
   
       &--active {
         &::before {
@@ -173,7 +179,6 @@
   
   .slider__button-after {
     margin-left: 120px;
-    //триггер переключения слайдера
     &--active {
       position: relative;
   
@@ -193,7 +198,7 @@
     }
   
     @media (min-width: $tablet_width) {
-      margin-right: 100px;
+      margin-right: 50px;
     }
   
     @media (min-width: $dekstop-width) {
@@ -225,7 +230,7 @@
         left: -155px;
         width: 428px;
         height: 6px;
-        background-color: red;
+        background-color: #dcdcdc;
         border-radius: 2px;
       }
     }
@@ -249,12 +254,12 @@
       border: 1px solid greyline;
       border-radius: 50%;
       box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
-  
+      
       &::before {
         content: "";
         position: absolute;
-        top: 12px;
-        left: 12px;
+        top: 39%;
+        left: 39%;
         width: 8px;
         height: 8px;
         background-color: $green;
@@ -276,7 +281,8 @@
       left: 45px;
     }
   }
-  
+
+
   .slider--displayed {
     display: block;
     overflow-x: visible;
