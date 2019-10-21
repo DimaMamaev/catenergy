@@ -1636,6 +1636,8 @@ body {
     line-height: 60px;
     border: none;
     padding-top: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   .main-catalog__item {
     padding: 0;
@@ -1666,9 +1668,8 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .main-catalog__item-wrapper {
     display: block;
@@ -1828,6 +1829,7 @@ body {
     margin: 0;
     padding: 0;
     margin-top: 65px;
+    overflow: hidden;
   }
   .page-main__program {
     margin: 0;
@@ -1863,6 +1865,9 @@ body {
   }
   .program__link {
     margin: 0;
+  }
+  .link__btn {
+    padding: 0;
   }
   .program__icon {
     position: relative;
@@ -2022,13 +2027,28 @@ body {
   .data__property {
     background-color: #f2f2f2;
   }
+  .page-main__title {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+  .page-main__main-catalog {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+  .main-catalog {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
   .main-catalog__item {
-    width: 165px;
     padding-right: 40px;
     padding-left: 40px;
   }
   .information__stats {
-    width: 165px;
+    width: auto;
+  }
+  .stats__value {
+    padding-right: 80px;
   }
   .item__img--small-can {
     left: 15%;
@@ -2038,7 +2058,7 @@ body {
   }
   .item__article {
     padding-left: 0;
-    width: auto;
+    width: 173px;
   }
   .item--wrapper {
     padding-top: 0;
@@ -2068,6 +2088,9 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .related-products__content--wrapper {
     display: -webkit-box;
@@ -2077,7 +2100,6 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-right: 70px;
   }
   .content__item-wrapper {
     margin: 0;
@@ -2113,18 +2135,18 @@ body {
   .content__article {
     padding: 0;
     margin: 0;
-    padding-right: 80px;
-    width: 170px;
+    padding-right: 150px;
+    width: 195px;
   }
   .content__stats {
     padding-bottom: 0;
-    width: 245px;
+    width: 285px;
     padding-right: 40px;
   }
   .content__item--giftcard {
     padding: 0;
     margin: 0;
-    width: 245px;
+    width: 254px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
