@@ -104,7 +104,7 @@
     display: block;
     background-color: #444;
     top: 27px;
-    left: 97px;
+    left: 105px;
 }
 .program__link::before {
     position: absolute;
@@ -113,13 +113,13 @@
     border-left-color: #444;
     display: block;
     top: 23px;
-    left: 120px;
+    left: 127px;
 }
 .program__link:hover::after {
     width: 30px;
 }
 .program__link:hover::before {
-    left: 125px;
+    left: 131px;
 }
 .program__link:active {
     opacity: 0.3;
@@ -608,14 +608,14 @@ background-size: 26px 31px;
     }
     .program__link::after {
         top: 8px;
-        left: 130px;
+        left: 135px;
     }
     .program__link::before {
         top: 4px;
-        left: 152px;
+        left: 158px;
     }
     .program__link:hover::before {
-        left: 160px;
+        left: 164px;
     }
     //////page-main__deteils
 
