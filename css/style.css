@@ -2257,10 +2257,34 @@ body {
   padding-bottom: 23px;
   border-top: 2px solid #d9d9d9;
   border-bottom: 2px solid #d9d9d9;
+  padding-right: 70px;
+  padding-left: 70px;
 }
 
-.groups__link {
-  padding-right: 15px;
+.groups__item {
+  width: 140px;
+}
+
+.link__vk,
+.link__instagramm,
+.link__facebook,
+.link__rightholder {
+  fill: #717171;
+  opacity: 1;
+}
+
+.link__vk:hover,
+.link__instagramm:hover,
+.link__facebook:hover,
+.link__rightholder:hover {
+  fill: #68b738;
+}
+
+.link__vk:active,
+.link__instagramm:active,
+.link__facebook:active,
+.link__rightholder:active {
+  opacity: 0.3;
 }
 
 .page-footer__rightholder {
@@ -2279,7 +2303,7 @@ body {
           align-items: center;
   margin: 0;
   padding: 0;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -2326,6 +2350,26 @@ body {
     padding-bottom: 60px;
     margin-right: 30px;
   }
+  .groups__item {
+    width: auto;
+  }
+  .link__vk {
+    width: 30px;
+    height: 16px;
+  }
+  .link__instagramm {
+    width: 23px;
+    height: 23px;
+  }
+  .link__facebook {
+    width: 14px;
+    height: 28px;
+  }
+  .link__rightholder {
+    width: 27px;
+    height: 34px;
+    padding-left: 25px;
+  }
   .social__groups {
     padding: 0;
     margin: 0;
@@ -2340,7 +2384,6 @@ body {
   .page-footer__rightholder {
     margin: 0;
     padding: 0;
-    padding-left: 131px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -2371,8 +2414,9 @@ body {
     padding-right: 40px;
     padding-top: 65px;
     padding-bottom: 65px;
-    margin-left: 70px;
-    margin-right: 70px;
+  }
+  .groups__item {
+    width: 10px;
   }
   .social__logo {
     margin-right: 160px;
