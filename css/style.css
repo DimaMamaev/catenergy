@@ -2320,16 +2320,20 @@ body {
     margin: 0;
     padding: 0;
   }
+  .contacts__invitation {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
   .invitation__article {
+    margin: 0;
     font-size: 20px;
     line-height: 25px;
-    padding-left: 40px;
     padding-right: 320px;
   }
   .invitation__adress {
+    margin: 0;
     font-size: 16px;
     line-height: 20px;
-    padding-right: 40px;
   }
   .page-footer__social {
     display: -webkit-box;
@@ -2703,6 +2707,17 @@ input[type="radio"].visually-hidden {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+}
+
+.item__logo {
+  position: absolute;
+  top: 34%;
+  left: 89%;
+}
+
+.item__logo:hover {
+  fill: #68b738;
 }
 
 .item__input {
@@ -2952,6 +2967,9 @@ input[type="checkbox"].visually-hidden {
   }
   .contacts__article::after {
     width: 15%;
+  }
+  .item__logo {
+    left: 93%;
   }
   .requisites__label {
     font-size: 20px;

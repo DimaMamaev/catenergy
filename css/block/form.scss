@@ -207,6 +207,15 @@ input[type="radio"].visually-hidden {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+}
+.item__logo {
+    position: absolute;
+    top: 34%;
+    left: 89%;
+}
+.item__logo:hover {
+    fill: #68b738;
 }
 .item__input {
     color: #444444;
@@ -449,7 +458,9 @@ input[type="checkbox"].visually-hidden {
     .contacts__article::after {
         width: 15%;
     }
-
+    .item__logo {
+        left: 93%;
+    }
     .requisites__label {
         font-size: 20px;
         line-height: 20px;
