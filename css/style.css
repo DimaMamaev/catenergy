@@ -1703,12 +1703,12 @@ body {
   .item__img--small-can {
     position: absolute;
     top: -10%;
-    left: 24%;
+    left: 0;
   }
   .item__img--big-can {
     position: absolute;
     top: -16.5%;
-    left: 24%;
+    left: 0;
   }
   .main-catalog__item--full-catalog {
     background-color: white;
@@ -1796,7 +1796,7 @@ body {
     padding-right: 50px;
   }
   .content__item--giftcard {
-    background-image: url(../img/catalog/gift-photo-tablet.png);
+    background-image: url(../img/gift-photo-tablet.png);
     background-position: 0% 100%;
   }
   .content__item--giftcard {
@@ -2050,12 +2050,6 @@ body {
   .stats__value {
     padding-right: 80px;
   }
-  .item__img--small-can {
-    left: 15%;
-  }
-  .item__img--big-can {
-    left: 8%;
-  }
   .item__article {
     padding-left: 0;
     width: 173px;
@@ -2168,7 +2162,7 @@ body {
     padding-right: 40px;
   }
   .content__item--giftcard {
-    background-image: url(../img/catalog/gift-photo-desktop.png);
+    background-image: url(../img/gift-photo-desktop.png);
     background-position: 0% 100%;
   }
   .content__item--vitamins {
@@ -2859,7 +2853,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .elements__input:checked + .elements__article::before {
-  background-image: url(../img/catalog/tick.png);
+  background-image: url(../img/tick.png);
   background-size: 21px;
   background-repeat: no-repeat;
   background-position: center;

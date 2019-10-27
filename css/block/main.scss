@@ -816,12 +816,12 @@ background-size: 26px 31px;
     .item__img--small-can {
         position: absolute;
         top: -10%;
-        left: 24%;
+        left: 0;
     }
     .item__img--big-can {
         position: absolute;
         top: -16.5%;
-        left: 24%;
+        left: 0;
     }
     .main-catalog__item--full-catalog {
         background-color: white;
@@ -907,7 +907,7 @@ background-size: 26px 31px;
     }
 
     .content__item--giftcard {
-        background-image: url(../img/catalog/gift-photo-tablet.png);
+        background-image: url(../img/gift-photo-tablet.png);
         background-position: 0% 100%;
     }
     .content__item--giftcard {
@@ -1155,12 +1155,7 @@ background-size: 26px 31px;
     .stats__value {
         padding-right: 80px;
     }
-    .item__img--small-can {
-        left: 15%;
-    }
-    .item__img--big-can {
-        left: 8%;
-    }
+
     .item__article{
         padding-left: 0;
         width: 173px;
@@ -1249,7 +1244,7 @@ background-size: 26px 31px;
     }
 
     .content__item--giftcard {
-        background-image: url(../img/catalog/gift-photo-desktop.png);
+        background-image: url(../img/gift-photo-desktop.png);
         background-position: 0% 100%;
     }
     .content__item--vitamins {

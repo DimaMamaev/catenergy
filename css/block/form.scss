@@ -338,7 +338,7 @@ input[type="checkbox"].visually-hidden {
       top: -7px;
   }
   .elements__input:checked + .elements__article::before {
-      background-image: url(../img/catalog/tick.png);
+      background-image: url(../img/tick.png);
       background-size: 21px;
       background-repeat: no-repeat;
       background-position: center;
