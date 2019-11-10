@@ -7,6 +7,6 @@ catNameInput.addEventListener('invalid', function
     else if (catNameInput.validity.tooLong) {
         catNameInput.setCustomValidity ('Имя/кличка кота должна состоять максимум из пятнадцати символов');}
     else if (catNameInput.validity.valueMissing) {
-        catNameInput.setCustomValidity ('Это поле обязательное для заполнения');}
+        catNameInput.setCustomValidity ('Хотите оставить кота голодным? Заполниете поле!');}
 }
 )

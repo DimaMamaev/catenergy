@@ -11,3 +11,44 @@
 
 
 
+.page-header__private-office {
+    width:100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.83);
+    position:fixed;
+    top:0px;
+    z-index: 1;
+}
+
+.private-office__container {
+    background-color: gray;
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+}
+.private-office__title {
+    padding: 0;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 24px;
+    font-family: $oswald;
+    font-weight: normal;
+}
+.login__data {
+    padding: 0;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+}
+.data__email {
+    padding-bottom: 10px;
+}

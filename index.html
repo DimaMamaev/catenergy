@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
     <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
-    <script src="js/svg4everybody.js" ></script>
+    <script src="js/svg4everybody.js"></script>
     <title>Магазин спортивного питания CAT ENERGY</title>
 </head>
 <body>
@@ -36,9 +36,40 @@
                     <li class="usernav__item "> <a class="usernav__link usernav__link--active usernav__link--main" href="#">Главная</a> </li>
                     <li class="usernav__item"> <a class="usernav__link" href="catalog.html">Каталог продукции</a> </li>
                     <li class="usernav__item"> <a class="usernav__link" href="form.html">Подбор программы</a> </li>
+                    <li class="usernav__item"> <a class="usernav__link">Личный кабинет</a> </li>
                 </ul>
             </nav>
         </div>
+        <section class="page-header__private-office">
+            <div class="private-office__container">
+                <section class="private-office">
+                    <form class="private-office__form" action="http://echo.htmlacademy.ru" method="post">
+                        <h1 class="visually-hidden">Войдите в личный кабинет</h1>
+                        <h1 class="private-office__title">Войди чтобы совершать покупки в один клик</h1>
+                        <fieldset class="private-office__login">
+                            <ul class="login__data">
+                                <li class="data__email">
+                                    <label class="email__field">
+                                        <span class="email__field-article">e-mail:*</span>
+                                        <input type="email" class="email__field-input" name="e-mail" placeholder="kuklachev@gmail.com" maxlength="15" required>
+                                    </label>
+                                </li>
+                                <li class="data__mobile">
+                                    <label class="mobile__field">
+                                        <span class="mobile__field-article">телефон:*</span>
+                                        <input type="tel" class="mobile__field-input" name="Телефон" placeholder="8 (960) 900-60-90" maxlength="15" required>
+                                    </label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </form>
+                    <a href="#">Забыли логин/пароль?</a>
+                </section>
+                <section class="private-office__new-user">
+                    <a href="#">Новый пользователь? Зарегистрируйтесь и получите скидку на первую покупку!</a>
+                </section>
+            </div>
+        </section>
         <section class="page-header__title">
             <div class="title-content">
                 <h2 class="title__article" >Функциональное питание для котов</h2>
