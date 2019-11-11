@@ -36,37 +36,43 @@
                     <li class="usernav__item "> <a class="usernav__link usernav__link--active usernav__link--main" href="#">Главная</a> </li>
                     <li class="usernav__item"> <a class="usernav__link" href="catalog.html">Каталог продукции</a> </li>
                     <li class="usernav__item"> <a class="usernav__link" href="form.html">Подбор программы</a> </li>
-                    <li class="usernav__item"> <a class="usernav__link">Личный кабинет</a> </li>
+                    <li class="usernav__item"> <a class="usernav__link usernav__link-office">Личный кабинет</a> </li>
                 </ul>
             </nav>
         </div>
         <section class="page-header__private-office">
             <div class="private-office__container">
+                <div class="container__btn">
+                    <span class="btn__close"></span>
+                </div>
                 <section class="private-office">
                     <form class="private-office__form" action="http://echo.htmlacademy.ru" method="post">
                         <h1 class="visually-hidden">Войдите в личный кабинет</h1>
-                        <h1 class="private-office__title">Войди чтобы совершать покупки в один клик</h1>
+                        <h2 class="private-office__title">Войди чтобы совершать покупки в один клик</h2>
                         <fieldset class="private-office__login">
                             <ul class="login__data">
                                 <li class="data__email">
                                     <label class="email__field">
-                                        <span class="email__field-article">e-mail:*</span>
+                                        <span class="email__field-article">Логин:</span>
                                         <input type="email" class="email__field-input" name="e-mail" placeholder="kuklachev@gmail.com" maxlength="15" required>
                                     </label>
                                 </li>
                                 <li class="data__mobile">
                                     <label class="mobile__field">
-                                        <span class="mobile__field-article">телефон:*</span>
+                                        <span class="mobile__field-article">Пароль:</span>
                                         <input type="tel" class="mobile__field-input" name="Телефон" placeholder="8 (960) 900-60-90" maxlength="15" required>
                                     </label>
                                 </li>
                             </ul>
                         </fieldset>
                     </form>
-                    <a href="#">Забыли логин/пароль?</a>
+                    <a class="private-office__password" href="#">Забыли логин/пароль?</a>
                 </section>
                 <section class="private-office__new-user">
-                    <a href="#">Новый пользователь? Зарегистрируйтесь и получите скидку на первую покупку!</a>
+                    <p class="new-user__promo">Зарегистрируйтесь и накормите кота по скидке!</p> 
+                    <a href="#" class="new-user__registration">
+                        <button class="new-user__btn">Регистрация!</button>
+                    </a>
                 </section>
             </div>
         </section>
