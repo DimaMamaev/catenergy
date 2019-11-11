@@ -3664,4 +3664,10 @@ input[type="checkbox"].visually-hidden {
   -webkit-transform: rotate(133deg);
           transform: rotate(133deg);
 }
+
+@media (min-width: 768px) {
+  .usernav__item--hide {
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */
