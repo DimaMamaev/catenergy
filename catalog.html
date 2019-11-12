@@ -36,9 +36,54 @@
                         <li class="usernav__item usernav__item--catalog"> <a class="usernav__link " href="index.html">Главная</a> </li>
                         <li class="usernav__item usernav__item--catalog"> <a class="usernav__link usernav__link--active" href="catalog.html">Каталог продукции</a> </li>
                         <li class="usernav__item usernav__item--catalog"> <a class="usernav__link" href="form.html">Подбор программы</a> </li>
+                        <li class="usernav__item usernav__item--mobile"> <a class="usernav__link usernav__link-office">Личный кабинет</a> </li>
+                        <li class="usernav__item usernav__item--tablet">
+                            <a class="usernav__link" href="#">
+                                <svg class="link__login link__login--black" width="30px" height="30px">
+                                    <title>Вход в личный кабинет</title>
+                                    <use xlink:href="img/sprite.svg#login-icon"></use>
+                                </svg>
+                            </a>
+                        </li>    
                     </ul>
                 </nav>
             </div>
+            <section class="page-header__private-office">
+            <div class="private-office__container">
+                <div class="container__btn">
+                    <span class="btn__close"></span>
+                </div>
+                <section class="private-office">
+                    <form class="private-office__form" action="http://echo.htmlacademy.ru" method="post">
+                        <h1 class="visually-hidden">Войдите в личный кабинет</h1>
+                        <h2 class="private-office__title">Войди чтобы совершать покупки в один клик</h2>
+                        <fieldset class="private-office__login">
+                            <ul class="login__data">
+                                <li class="data__email">
+                                    <label class="email__field">
+                                        <span class="email__field-article">Логин:</span>
+                                        <input type="email" class="email__field-input" name="e-mail" placeholder="kuklachev@gmail.com" maxlength="15" required>
+                                    </label>
+                                </li>
+                                <li class="data__mobile">
+                                    <label class="mobile__field">
+                                        <span class="mobile__field-article">Пароль:</span>
+                                        <input type="tel" class="mobile__field-input" name="Телефон" placeholder="8 (960) 900-60-90" maxlength="15" required>
+                                    </label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </form>
+                    <a class="private-office__password" href="#">Забыли логин/пароль?</a>
+                </section>
+                <section class="private-office__new-user">
+                    <p class="new-user__promo">Зарегистрируйтесь и накормите кота по скидке!</p> 
+                    <a href="#" class="new-user__registration">
+                        <button class="new-user__btn">Регистрация!</button>
+                    </a>
+                </section>
+            </div>
+        </section>
     </header>
     <main class="page-main">
         <h1 class="visually-hidden">Каталог CAT ENERGY</h1>

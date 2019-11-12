@@ -262,6 +262,8 @@
         flex-direction: row;
         justify-content: space-between;
         margin-top: 25px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
     .usernav__title {
@@ -278,26 +280,21 @@
         font-weight: normal;
         border: none;
         margin-left: 25px;
-        padding-top: 18px;
+        padding-top: 13px;
     }
 
     .usernav__link--active {
         border-bottom: 2px solid $green;
         padding-bottom: 10px;
     }  
-    
-    .page-header{
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-
-
     .page-header__title {
         background: none;
         display: flex;
         margin: 0;
         padding: 0;
         padding-top: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
     .title-content {
         margin: 0;

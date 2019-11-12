@@ -1,3 +1,5 @@
+
+// Открытие/закрытие меню на мобильной версии
 var link = document.querySelector('.menu-btn');
 var menu = document.querySelector('.page-header__usernav--active');
     
@@ -10,34 +12,38 @@ var menu = document.querySelector('.page-header__usernav--active');
 // Открытие/закрытие окна регистрации
 
 var office = document.querySelector('.usernav__link-office');
-var openRegistration = document.querySelector('.page-header__private-office');
-var closeRegistration = document.querySelector('.btn__close')
-
+var openRegistrationMobile = document.querySelector('.page-header__private-office');
+var closeRegistration = document.querySelector('.btn__close');
+var openRegistrationTablet = document.querySelector('.usernav__item--tablet');
 
 office.addEventListener('click',function(event){
     event.preventDefault();
-    openRegistration.classList.add('page-header__private-office--show');
+    openRegistrationMobile.classList.add('page-header__private-office--show');
     menu.classList.add('page-header__usernav--active'); 
     link.classList.remove('menu-btn--active');   
 })
 
-closeRegistration.addEventListener('click', function(event) {
+openRegistrationTablet.addEventListener('click', function(event){
     event.preventDefault();
-    openRegistration.classList.remove('page-header__private-office--show');
+    openRegistrationMobile.classList.add('page-header__private-office--show');
 })
 
+closeRegistration.addEventListener('click', function(event){
+    event.preventDefault();
+    openRegistrationMobile.classList.remove('page-header__private-office--show');
+})
 
 // Валидация форм заполнения
 
-var catNameInput = document.querySelector('.section__input');
+var catNameInput = document.querySelector('.section__input-name');
 
-catNameInput.addEventListener('invalid', function
-(evt){
+catNameInput.addEventListener('invalid', function(event){
     if (catNameInput.validity.tooShort) {
         catNameInput.setCustomValidity ('Имя/кличка кота должна состоять минимум из трех символов');} 
     else if (catNameInput.validity.tooLong) {
         catNameInput.setCustomValidity ('Имя/кличка кота должна состоять максимум из пятнадцати символов');}
     else if (catNameInput.validity.valueMissing) {
-        catNameInput.setCustomValidity ('Хотите оставить кота голодным? Заполниете поле!');}
-}
-)
+        catNameInput.setCustomValidity ('Хотите оставить кота голодным? Заполните поле!');}
+})
+
+// 
