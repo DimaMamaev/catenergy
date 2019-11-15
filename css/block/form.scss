@@ -77,7 +77,9 @@ fieldset {
     justify-content: space-between;
     align-items: center;
 }
-.section__input {
+.section__input-name,
+.section__input-weight,
+.section__input-old {
     color: #444444;
     text-transform: uppercase;
     padding: 0;
@@ -91,10 +93,14 @@ fieldset {
     outline: none; 
 }
 
-.section__input:hover {
+.section__input-name:hover,
+.section__input-weight:hover,
+.section__input-old:hover {
     border: 2px solid #cdcdcd;  
 }
-.section__input:focus {
+.section__input-name:active,
+.section__input-weight:active,
+.section__input-old:active {
     border: 2px solid black;  
 }
 

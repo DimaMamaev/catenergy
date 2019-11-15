@@ -666,7 +666,7 @@ body {
         justify-content: space-around;
   }
   .usernav__item {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 25px;
     font-weight: normal;
     border: none;
@@ -2557,7 +2557,9 @@ fieldset {
           align-items: center;
 }
 
-.section__input {
+.section__input-name,
+.section__input-weight,
+.section__input-old {
   color: #444444;
   text-transform: uppercase;
   padding: 0;
@@ -2573,11 +2575,15 @@ fieldset {
   outline: none;
 }
 
-.section__input:hover {
+.section__input-name:hover,
+.section__input-weight:hover,
+.section__input-old:hover {
   border: 2px solid #cdcdcd;
 }
 
-.section__input:focus {
+.section__input-name:active,
+.section__input-weight:active,
+.section__input-old:active {
   border: 2px solid black;
 }
 
@@ -3198,13 +3204,13 @@ input[type="checkbox"].visually-hidden {
 .private-office__container {
   background-color: #e0e0e0;
   position: absolute;
+  width: 75%;
   top: 30%;
+  left: 7%;
   padding: 0;
   margin: 0;
-  margin-left: 15px;
-  margin-right: 15px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
   border-radius: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -3220,6 +3226,25 @@ input[type="checkbox"].visually-hidden {
   font-weight: normal;
   color: black;
   text-align: center;
+}
+
+.email__field,
+.mobile__field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.email__field-input,
+.mobile__field-input {
+  width: 70%;
+  padding-left: 5px;
 }
 
 .login__data,
@@ -3312,19 +3337,47 @@ input[type="checkbox"].visually-hidden {
     display: block;
   }
   .private-office__container {
-    left: 20%;
-    padding: 25px;
+    width: 500px;
+    right: 14%;
+    left: unset;
+    top: 20%;
+    padding: 30px;
+    background-color: white;
   }
-}
-
-@media (min-width: 1300px) {
-  .link__login {
-    width: 40px;
-    height: 40px;
-    fill: white;
+  .btn__close {
+    left: 99%;
   }
-  .link__login--black {
-    fill: black;
+  .btn__close::before,
+  .btn__close::after {
+    width: 20px;
+    height: 3px;
+    top: -5px;
+  }
+  .private-office__title {
+    font-size: 28px;
+    text-transform: uppercase;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .login__data,
+  .new-user__promo {
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .data__email {
+    padding-bottom: 25px;
+  }
+  .email__field-input,
+  .mobile__field-input {
+    font-size: 18px;
+    padding-left: 10px;
+  }
+  .private-office__password {
+    font-size: 16px;
+  }
+  .new-user__btn {
+    font-size: 16px;
   }
 }
 
@@ -3690,6 +3743,21 @@ input[type="checkbox"].visually-hidden {
 @media (min-width: 1300px) {
   .slider--left {
     margin-left: -100%;
+  }
+}
+
+@media (min-width: 1300px) {
+  .link__login {
+    width: 40px;
+    height: 40px;
+    fill: white;
+  }
+  .link__login--black {
+    fill: black;
+  }
+  .private-office__container {
+    width: 55%;
+    top: 30%;
   }
 }
 /*# sourceMappingURL=style.css.map */

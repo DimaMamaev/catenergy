@@ -33,6 +33,7 @@ closeRegistration.addEventListener('click', function(event){
     openRegistrationMobile.classList.remove('page-header__private-office--show');
 })
 
+
 // Валидация форм заполнения
 
 var catNameInput = document.querySelector('.section__input-name');
