@@ -3381,6 +3381,21 @@ input[type="checkbox"].visually-hidden {
   }
 }
 
+@media (min-width: 1300px) {
+  .link__login {
+    width: 40px;
+    height: 40px;
+    fill: white;
+  }
+  .link__login--black {
+    fill: black;
+  }
+  .private-office__container {
+    width: 55%;
+    top: 30%;
+  }
+}
+
 .slider__container {
   padding-bottom: 36px;
 }
@@ -3743,21 +3758,6 @@ input[type="checkbox"].visually-hidden {
 @media (min-width: 1300px) {
   .slider--left {
     margin-left: -100%;
-  }
-}
-
-@media (min-width: 1300px) {
-  .link__login {
-    width: 40px;
-    height: 40px;
-    fill: white;
-  }
-  .link__login--black {
-    fill: black;
-  }
-  .private-office__container {
-    width: 55%;
-    top: 30%;
   }
 }
 /*# sourceMappingURL=style.css.map */

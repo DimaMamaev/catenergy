@@ -25,13 +25,19 @@ office.addEventListener('click',function(event){
 
 openRegistrationTablet.addEventListener('click', function(event){
     event.preventDefault();
-    openRegistrationMobile.classList.add('page-header__private-office--show');
+    openRegistrationMobile.classList.toggle('page-header__private-office--show');
 })
 
 closeRegistration.addEventListener('click', function(event){
     event.preventDefault();
     openRegistrationMobile.classList.remove('page-header__private-office--show');
+    document.addEventListener('keydown', function(event){
+        if (event.keyCode === 27) {
+        openRegistrationMobile.classList.remove('page-header__private-office--show');   
+        }
+    })
 })
+
 
 
 // Валидация форм заполнения

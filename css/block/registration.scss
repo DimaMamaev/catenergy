@@ -168,3 +168,19 @@
         font-size: 16px;
     }
 }
+
+
+@media (min-width:$dekstop-width) {
+    .link__login {
+        width: 40px;
+        height: 40px;
+        fill: white;
+    }
+    .link__login--black {
+        fill: black;
+    }
+    .private-office__container {
+        width: 55%;
+        top: 30%;
+    }
+}
