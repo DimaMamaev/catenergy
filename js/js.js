@@ -62,7 +62,38 @@ basketClose.addEventListener('click', function(event) {
 
 // Перетаскивание открытого окна корзины
 
+var basketHandler = document.querySelector('.purchases__wrapper');
 
+basketHandler.onmousedown = function(event) {
+
+    let shiftX = event.clientX - basketHandler.getBoundingClientRect().left;
+    let shiftY = event.clientY - basketHandler.getBoundingClientRect().top;
+  
+    document.body.append(basketHandler);
+  
+    moveAt(event.pageX, event.pageY);
+  
+    function moveAt(pageX, pageY) {
+        basketHandler.style.left = pageX - shiftX + 'px';
+        basketHandler.style.top = pageY - shiftY + 'px';
+    }
+  
+    function onMouseMove(event) {
+      moveAt(event.pageX, event.pageY);
+    }
+  
+    document.addEventListener('mousemove', onMouseMove);
+  
+    basketHandler.onmouseup = function() {
+      document.removeEventListener('mousemove', onMouseMove);
+      basketHandler.onmouseup = null;
+    };
+  
+  };
+  
+  basketHandler.ondragstart = function() {
+    return false;
+  };
 
 
 
