@@ -38,6 +38,34 @@ closeRegistration.addEventListener('click', function(event){
     })
 })
 
+// Открытие/закрытие корзины
+var basket = document.querySelector('.basket__wrapper');
+var basketOpen = document.querySelector('.basket__purchases');
+var basketClose = document.querySelector('.purchases__btn')
+
+
+
+basket.addEventListener('click', function(event) {
+    event.preventDefault();
+    basketOpen.classList.toggle('basket__purchases--show');
+})
+
+basketClose.addEventListener('click', function(event) {
+    event.preventDefault();
+    basketOpen.classList.remove('basket__purchases--show');
+    document.addEventListener('keydown', function(event) {
+        if (event.keyCode === 27) {
+            basketOpen.classList.remove('basket__purchases--show');
+        }
+    })
+})
+
+// Перетаскивание открытого окна корзины
+
+
+
+
+
 
 
 // Валидация форм заполнения

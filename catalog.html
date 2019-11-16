@@ -47,16 +47,6 @@
                         </li>    
                     </ul>
                 </nav>
-                <nav class="page-header__busket">
-                    <div class="busket__wrapper">
-                        <a class="busket__btn" href="#">
-                            <svg class="busket__icon" width="30px" height="30px">
-                                <title>Корзина покупок</title>
-                                <use xlink:href="img/sprite.svg#login-icon"></use>
-                            </svg>
-                        </a>
-                    </div>
-                </nav>
             </div>
             <section class="page-header__private-office">
             <div class="private-office__container">
@@ -92,6 +82,63 @@
                         <button class="new-user__btn">Регистрация!</button>
                     </a>
                 </section>
+            </div>
+        </section>
+        <section class="page-header__basket">
+            <div class="basket__wrapper">
+                <a class="basket__btn">
+                    <svg class="basket__icon" width="30px" height="30px">
+                        <title>Корзина покупок</title>
+                        <use xlink:href="img/sprite.svg#basket-icon"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="basket__purchases">
+                <div class="purchases__wrapper">
+                    <div class="purchases__logo">
+                        <svg class="purchases__logo-icon" width="40px" height="40px">
+                            <title>Порадуйте своего кота!</title>
+                            <use xlink:href="img/sprite.svg#basket-background"></use>
+                        </svg>
+                    </div>
+                    <div class="purchases__btn">
+                        <span class="btn__close-purchases"></span>
+                    </div>
+                    <article class="purchases__article">Ваш список покупок</article>
+                    <table class="purchases__shop-list">
+                        <thead class="shop-list__article">
+                            <tr>
+                                <th scope="col">Программа</th>
+                                <th scope="col">Корм</th>
+                                <th scope="col">Обьем</th>
+                                <th scope="col">Цена</th>
+                            </tr>
+                        </thead>
+                        <tbody class="shop-list__properties">
+                            <tr>
+                                <th class="properties__value" scope="row">Slim</th>
+                                <td class="properties__value">Гречка</td>
+                                <td class="properties__value">500Г</td>
+                                <td class="properties__value">400р.</td>
+                            </tr>
+                            <tr>
+                                <th class="properties__value" scope="row">Pro</th>
+                                <td class="properties__value">Рыба</td>
+                                <td class="properties__value">1000Г</td>
+                                <td class="properties__value">1000р.</td>
+                            </tr>
+                            <tr>
+                                <th class="properties__value" scope="row">Итого</th>
+                                <td class="properties__value">-</td>
+                                <td class="properties__value">1500Г</td>
+                                <td class="properties__value">1400р.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a class="purchases__link" href="#">
+                        <button class="purchases__button">Накорми кота!</button>
+                    </a>
+                </div>
             </div>
         </section>
     </header>
