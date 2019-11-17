@@ -286,11 +286,10 @@ background-size: 26px 31px;
     font-family: $oswald;
     font-size: 36px;
     line-height: 60px;
-    font-weight: normal;
+    font-weight: 400;
     text-align: left;
     border-bottom: 1px solid $greyline;
     padding-left: 20px;
-    padding-right: 20px;
     padding-top: 15px;
     padding-bottom: 15px;
 }
@@ -414,7 +413,7 @@ background-size: 26px 31px;
     width: 30px;
     height: 2px;
     top: 40px;
-    left: 45%;
+    left: 47%;
     background-color: $greyline;
     display: block;
 }
@@ -506,7 +505,7 @@ background-size: 26px 31px;
     background-color: $green;
     text-align: center;
     padding-top: 60px;
-    background-image: url(../img/catalog/gift-photo-mobile.png);
+    background-image: url(../img/gift-photo-mobile.png);
     background-size: cover;
     background-position: center;
 }
@@ -839,7 +838,7 @@ background-size: 26px 31px;
     .item__description {
         font-size: 16px;
         line-height: 16px;
-        padding-bottom: 85px;
+        padding-bottom: 70px;
         width: 265px;
     }
     .item__icon {
