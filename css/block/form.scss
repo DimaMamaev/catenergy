@@ -96,12 +96,15 @@ fieldset {
 .section__input-name:hover,
 .section__input-weight:hover,
 .section__input-old:hover {
-    border: 2px solid #cdcdcd;  
+    border: 1px solid #696969;  
 }
+.section__input-name:focus,
+.section__input-weight:focus,
+.section__input-old:focus,
 .section__input-name:active,
 .section__input-weight:active,
 .section__input-old:active {
-    border: 2px solid black;  
+    border: 1px solid black;  
 }
 
 .section__article {
@@ -237,10 +240,11 @@ input[type="radio"].visually-hidden {
     outline: none;
 }
 .item__input:hover {
-    border: 2px solid #cdcdcd;  
+    border: 1px solid #696969;   
 }
-.item__input:focus {
-    border: 2px solid black;  
+.item__input:focus,
+.item__input:active {
+    border: 1px solid black;  
 }
 
 .requisites__article {
@@ -281,10 +285,11 @@ input[type="radio"].visually-hidden {
     outline: none;
 }
 .comments__input:hover {
-    border: 2px solid #cdcdcd;  
+    border: 1px solid #696969;    
 }
-.comments__input:focus {
-    border: 2px solid black;  
+.comments__input:focus,
+.comments__input:active {
+    border: 1px solid black;  
 }
 
 /////form__additionally
