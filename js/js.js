@@ -95,8 +95,6 @@ basketHandler.onmousedown = function(event) {
 
 
 
-
-
 // Валидация форм заполнения
 
 var catNameInput = document.querySelector('.section__input-name');

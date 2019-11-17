@@ -10,7 +10,6 @@
 .page-header__private-office--show {
     display: block;
 }
-
 .private-office__container {
     background-color: #e0e0e0;;
     position: absolute;
@@ -116,7 +115,6 @@
 .usernav__item--tablet {
     display: none;
 }
-
 @media (min-width:$tablet-width) {
     .usernav__item--mobile {
         display: none;
@@ -168,8 +166,6 @@
         font-size: 16px;
     }
 }
-
-
 @media (min-width:$dekstop-width) {
     .link__login {
         width: 40px;
