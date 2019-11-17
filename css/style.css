@@ -553,7 +553,7 @@ body {
   font-family: "Oswald", "Verdana", sans-serif;
   font-size: 36px;
   line-height: 36px;
-  font-weight: normal;
+  font-weight: 400;
   text-align: center;
   color: white;
 }
@@ -562,14 +562,10 @@ body {
   font-family: "Oswald", "Verdana", sans-serif;
   font-size: 14px;
   line-height: 14px;
-  font-weight: normal;
+  font-weight: 400;
   text-align: center;
   text-transform: uppercase;
   color: white;
-}
-
-.title__img {
-  text-align: center;
 }
 
 .title-content {
@@ -665,7 +661,7 @@ body {
   .usernav__item {
     font-size: 16px;
     line-height: 25px;
-    font-weight: normal;
+    font-weight: 400;
     border: none;
     margin-left: 25px;
     padding-top: 13px;
@@ -700,7 +696,7 @@ body {
     padding-left: 115px;
     margin-bottom: 40px;
     display: block;
-    height: 120px;
+    max-width: 800px;
   }
   .page-header__title p {
     margin: 0;
@@ -720,7 +716,7 @@ body {
     margin: 0;
     font-size: 20px;
     line-height: 20px;
-    font-weight: 300;
+    font-weight: 400;
     text-transform: uppercase;
     color: white;
     display: block;
@@ -728,9 +724,6 @@ body {
     top: 225px;
     left: 120px;
     width: 250px;
-    height: 53px;
-    padding-left: 25px;
-    padding-right: 25px;
     padding-top: 17px;
     padding-bottom: 17px;
   }
@@ -789,7 +782,7 @@ body {
   .usernav__item a {
     font-size: 20px;
     line-height: 25px;
-    font-weight: normal;
+    font-weight: 400;
     color: white;
   }
   .usernav__link--main {
@@ -809,7 +802,7 @@ body {
   .page-header__title p {
     font-size: 20px;
     line-height: 20px;
-    font-weight: normal;
+    font-weight: 400;
     padding: 0;
     margin: 0;
     padding-left: 80px;

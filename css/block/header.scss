@@ -149,7 +149,7 @@
     font-family: $oswald;
     font-size: 36px;
     line-height: 36px;
-    font-weight: normal;
+    font-weight: 400;
     text-align: center;
     color: white;
 }
@@ -157,13 +157,10 @@
     font-family: $oswald;
     font-size: 14px;
     line-height: 14px;
-    font-weight: normal;
+    font-weight: 400;
     text-align: center;
     text-transform: uppercase;
     color: white;
-}
-.title__img {
-    text-align: center;
 }
 .title-content {
     position: relative;
@@ -201,10 +198,7 @@
     border: none;
     color: #88c066;
 }
-
-
-////Catalog page
-
+//Catalog page
 .page-header--catalog {
     border-bottom: 1px solid $greyline;
 }
@@ -213,16 +207,12 @@
 
 
 
-////TABLET
-
-
+//TABLET
 @media (min-width:$tablet-width) {
-
     .page-header__btn,
     .nav__log-mobile {
         display: none;
     }
-     
     .nav__logo {
         width: 173px;
         height: 58px;
@@ -242,7 +232,6 @@
         padding-left: 30px;
         padding-right: 30px;
     }
-
     .usernav__title {
         display: flex;
         flex-direction: row;
@@ -250,16 +239,14 @@
         text-align: center;
         justify-content: space-around;
     }
-
     .usernav__item {
         font-size: 16px;
         line-height: 25px;
-        font-weight: normal;
+        font-weight: 400;
         border: none;
         margin-left: 25px;
         padding-top: 13px;
     }
-
     .usernav__link--active {
         border-bottom: 2px solid $green;
         padding-bottom: 10px;
@@ -277,7 +264,6 @@
         margin: 0;
         padding: 0;
     }
-
     .title__article {
         margin: 0;
         padding: 0;
@@ -289,10 +275,8 @@
         padding-left: 115px;
         margin-bottom: 40px;
         display: block;
-        height: 120px;
+        max-width: 800px;
     }
-
-    
     .page-header__title p {
         margin: 0;
         padding: 0;
@@ -312,7 +296,7 @@
         margin: 0;
         font-size: 20px;
         line-height: 20px;
-        font-weight: 300;
+        font-weight: 400;
         text-transform: uppercase;
         color: white;
         display: block;
@@ -320,23 +304,17 @@
         top: 225px;
         left: 120px;
         width: 250px;
-        height: 53px;
-        padding-left: 25px;
-        padding-right: 25px;
         padding-top: 17px; 
         padding-bottom: 17px;
     }
-
-    //////Catalog page
+    //Catalog page
     .page-header {
         border: none;
     }
 }
 
 
-/////DEKSTOP
-
-
+//DEKSTOP
 @media (min-width:$dekstop-width) {
 
     .page-header__title{
@@ -390,7 +368,7 @@
     .usernav__item  a {
         font-size: 20px;
         line-height: 25px;
-        font-weight: normal;
+        font-weight: 400;
         color: white;
     }
 
@@ -413,7 +391,7 @@
     .page-header__title p {
         font-size: 20px;
         line-height: 20px;
-        font-weight: normal;
+        font-weight: 400;
         padding: 0;
         margin: 0;
         padding-left: 80px;
@@ -431,9 +409,6 @@
     .title-content {
         position: unset;
     }
-
-
-    
     /////Catalog page
     .usernav__item--catalog a {
         color: black;
