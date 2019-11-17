@@ -584,18 +584,15 @@ body {
   padding: 0;
   margin: 0;
   text-align: center;
-  height: 40px;
   background-color: #68b738;
   font-family: "Oswald", "Verdana", sans-serif;
   font-size: 14px;
-  line-height: 18px;
-  font-weight: normal;
+  font-weight: 400;
   text-transform: uppercase;
   color: white;
   border: none;
   padding-top: 13px;
   padding-bottom: 13px;
-  margin-top: 10px;
   width: 100%;
   opacity: 1;
   outline: none;
@@ -1212,7 +1209,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   line-height: 16px;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 .item__link {
@@ -1224,7 +1221,7 @@ body {
 .link__btn {
   font-size: 16px;
   line-height: 20px;
-  font-weight: normal;
+  font-weight: 400;
   margin: 0;
   width: 100%;
   margin-top: 15px;
@@ -1271,7 +1268,7 @@ body {
   font-family: "Oswald", "Verdana", sans-serif;
   font-size: 16px;
   line-height: 20px;
-  font-weight: normal;
+  font-weight: 400;
   text-align: center;
   margin-top: 80px;
   margin-bottom: 15px;
@@ -1283,7 +1280,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   line-height: 16px;
-  font-weight: normal;
+  font-weight: 400;
   padding-bottom: 20px;
   color: #a8a8a8;
 }
@@ -1328,7 +1325,7 @@ body {
 
 .related-products__title {
   font-family: "Oswald", "Verdana", sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   text-align: left;
@@ -1362,7 +1359,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Oswald", "Verdana", sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
@@ -1373,7 +1370,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 14px;
   padding-bottom: 15px;
@@ -1409,7 +1406,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   padding-right: 50px;
@@ -1970,7 +1967,7 @@ body {
     margin-left: 40px;
     margin-right: 40px;
     font-family: "Oswald", "Verdana", sans-serif;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 60px;
     line-height: 60px;
     padding: 0;
@@ -1982,7 +1979,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 24px;
-    font-weight: normal;
+    font-weight: 400;
   }
   .example__data {
     padding: 0;
@@ -2008,7 +2005,7 @@ body {
   }
   .data__amount {
     font-family: "Oswald", "Verdana", sans-serif;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 30px;
     line-height: 35px;
   }
@@ -2016,7 +2013,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     line-height: 14px;
-    font-weight: normal;
+    font-weight: 400;
   }
   .example__section {
     display: -webkit-box;

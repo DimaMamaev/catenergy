@@ -1,10 +1,9 @@
-/////mobile width
+
 .page-header {
     padding: 0;
     margin: 0;
     background-color: white;
 }
-
 .page-header__nav, 
 .page-header__title{
     padding: 0;
@@ -12,7 +11,6 @@
     padding-left: 20px;
     padding-right: 20px;
 }
-
 .page-header__nav{
     display: flex;
     justify-content: space-between;
@@ -42,7 +40,6 @@
     margin-top: 3px;
     position: relative;
 }
-
 .menu-btn {
     position: absolute;
     content: '';
@@ -53,7 +50,6 @@
     top: 14px;
     left: 3px;
 }
-
 .menu-btn::before {
     position: absolute;
     content: '';
@@ -63,7 +59,6 @@
     display: block;
     top: 8px;
 }
-
 .menu-btn::after {
     position: absolute;
     content: '';
@@ -73,7 +68,6 @@
     display: block;
     top: -8px;
 }
-
 .menu-btn--active {
     position: absolute;
     content: '';
@@ -86,8 +80,6 @@
     transform: rotate(45deg);
     transition: all .5s;
 }
-
-
 .menu-btn--active::after {
     position: absolute;
     content: '';
@@ -99,15 +91,12 @@
     transform: rotate(-90deg);
     transition: all .5s;
 }
-
 .menu-btn--active::before {
     display: none;
 }
-
 .page-header__usernav--active {
     display: none;
 }
-
 .usernav__title {
     margin: 0;
     padding: 0;
@@ -120,7 +109,6 @@
     font-weight: 600;
     text-transform: uppercase;
 }
-
 .usernav__item {
     margin: 0;
     padding: 0;
@@ -148,15 +136,12 @@
     position: relative;
     margin-bottom: 20px;
 }
-
 .title-content {
     margin: 0;
     padding: 0;
     padding-left: 20px;
     padding-right: 20px;
-
 }
-
 .title__article {
     padding: 0;
     margin: 0;
@@ -168,8 +153,6 @@
     text-align: center;
     color: white;
 }
-
-
 .page-header__title p {
     font-family: $oswald;
     font-size: 14px;
@@ -179,16 +162,13 @@
     text-transform: uppercase;
     color: white;
 }
-
 .title__img {
     text-align: center;
-    
 }
 .title-content {
     position: relative;
     text-align: center;
 }
-
 .title__btn,
 .link__btn,
 .request__btn,
@@ -196,18 +176,15 @@
     padding: 0;
     margin: 0;
     text-align: center;
-    height: 40px;
     background-color: $green;
     font-family: $oswald;
     font-size: 14px;
-    line-height: 18px;
-    font-weight: normal;
+    font-weight: 400;
     text-transform: uppercase;
     color: white;
     border: none;
     padding-top: 13px;
     padding-bottom: 13px;
-    margin-top: 10px;
     width: 100%; 
     opacity: 1;
     outline: none;

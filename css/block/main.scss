@@ -1,4 +1,3 @@
-/////mobile width
 
 
  ////page-main__program
@@ -6,7 +5,6 @@
     margin: 0;
     padding: 0;
 }
-
 .page-main__program,
 .page-main__deteils {
     margin: 0;
@@ -14,7 +12,6 @@
     padding-left: 20px;
     padding-right: 20px;
 }
-
 .program__item {
     margin: 0;
     padding: 0;
@@ -23,7 +20,6 @@
     background-color: $grey;
    
 }
-
 .program__item article {
     margin: 0;
     padding: 0;
@@ -48,7 +44,6 @@
     border-radius: 50%;
     margin-right: 20px;
 }
-
 .program__icon--slim::before {
     position: absolute;
     content: '';
@@ -69,7 +64,6 @@
     top: 20%;
     left: -20%;
 }
-
 .program__item p {
     margin: 0;
     padding: 0;
@@ -80,7 +74,6 @@
     border-bottom: 2px solid $greyline;
     padding-bottom: 20px;
 }
-
 .program__link {
     margin: 0;
     padding: 0;
@@ -94,7 +87,6 @@
     text-transform: uppercase;
     opacity: 1;
 }
-
 .link__arrow {
     position: relative;
 }
@@ -123,12 +115,11 @@
 .link__arrow:hover::before {
     left: 35px;
 }
-
 .program__link:active {
     opacity: 0.3;
 }
 
-//////page-main__deteils
+//page-main__deteils
 .page-main__deteils {
     margin-bottom: 40px;
 }
@@ -141,7 +132,6 @@
    margin-bottom: 20px;
    font-weight: normal;
 }
-
 .deteils__list {
    margin: 0;
    padding: 0;
@@ -152,7 +142,6 @@
    margin-bottom: 20px;
    display: flex;
 }
-
 .deteils__item::before{
    content: '';
    width: 60px;
@@ -189,8 +178,7 @@ background-size: 26px 31px;
    padding-left: 20px;
    text-align: left;
 }
-
-/////page-main__example 
+//page-main__example 
 .page-main__example {
    background-color: $grey;
 }
@@ -243,8 +231,6 @@ background-size: 26px 31px;
    width: 125px;
 
 }
-
-
 .data__property {
     position: absolute;
     display: block;
@@ -263,8 +249,6 @@ background-size: 26px 31px;
     padding-right: 5px;
     padding-left: 5px;
 }
-
-
 .example__cost {
    text-align: center;
    font-family: $oswald;
@@ -339,7 +323,7 @@ background-size: 26px 31px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     line-height: 16px;
-    font-weight: normal;
+    font-weight: 400;
 }
 .item__link {
     padding: 0;
@@ -349,7 +333,7 @@ background-size: 26px 31px;
 .link__btn {
     font-size: 16px;
     line-height: 20px;
-    font-weight: normal;
+    font-weight: 400;
     margin: 0;
     width: 100%;
     margin-top: 15px;
@@ -388,7 +372,7 @@ background-size: 26px 31px;
     font-family: $oswald;
     font-size: 16px;
     line-height: 20px;
-    font-weight: normal;
+    font-weight: 400;
     text-align: center;
     margin-top: 80px;
     margin-bottom: 15px;
@@ -399,7 +383,7 @@ background-size: 26px 31px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     line-height: 16px;
-    font-weight: normal;
+    font-weight: 400;
     padding-bottom: 20px;
     color: #a8a8a8;
 }
@@ -442,7 +426,7 @@ background-size: 26px 31px;
 }
 .related-products__title {
     font-family: $oswald;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 24px;
     line-height: 24px;
     text-align: left;
@@ -472,7 +456,7 @@ background-size: 26px 31px;
     padding: 0;
     margin: 0;
     font-family: $oswald;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 16px;
     text-transform: uppercase;
@@ -482,7 +466,7 @@ background-size: 26px 31px;
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 14px;
     line-height: 14px;
     padding-bottom: 15px;
@@ -514,7 +498,7 @@ background-size: 26px 31px;
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     padding-right: 50px;
@@ -1073,7 +1057,7 @@ background-size: 26px 31px;
         margin-left: 40px;
         margin-right: 40px;
         font-family: $oswald;
-        font-weight: normal;
+        font-weight: 400;
         font-size: 60px;
         line-height: 60px;
         padding: 0;
@@ -1086,7 +1070,7 @@ background-size: 26px 31px;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 16px;
         line-height: 24px;
-        font-weight: normal;
+        font-weight: 400;
     }
 
     .example__data {
@@ -1108,7 +1092,7 @@ background-size: 26px 31px;
     }
     .data__amount {
         font-family: $oswald;
-        font-weight: normal;
+        font-weight: 400;
         font-size: 30px;
         line-height: 35px;
     }
@@ -1116,7 +1100,7 @@ background-size: 26px 31px;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 14px;
         line-height: 14px;
-        font-weight: normal;
+        font-weight: 400;
     }
     .example__section {
         display: flex;
