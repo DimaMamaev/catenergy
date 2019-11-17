@@ -1430,22 +1430,34 @@ body {
     margin: 0;
     padding-left: 30px;
     padding-right: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .program__item article {
     font-size: 36px;
     line-height: 36px;
     font-family: "Oswald", "Verdana", sans-serif;
-    position: relative;
     padding-top: 80px;
     margin-bottom: 25px;
   }
   .program__item {
     padding-left: 50px;
+    margin-bottom: 50px;
+    position: relative;
+    max-width: 950px;
   }
   .program__icon {
     position: absolute;
-    top: 65%;
-    left: 63%;
+    top: 25%;
+    left: 68%;
     width: 200px;
     height: 200px;
     display: block;
@@ -1464,7 +1476,7 @@ body {
     height: 100%;
     background-repeat: no-repeat;
     top: 20%;
-    left: -20%;
+    left: -27%;
   }
   .program__item p {
     margin: 0;
