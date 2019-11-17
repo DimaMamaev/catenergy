@@ -954,8 +954,8 @@ body {
   border: 5.5px solid transparent;
   border-left-color: #444;
   display: block;
-  top: 23px;
-  left: 127px;
+  top: 0;
+  left: 0;
 }
 
 .program__link:hover::after {
