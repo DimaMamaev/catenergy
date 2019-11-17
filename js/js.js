@@ -68,9 +68,7 @@ basketHandler.onmousedown = function(event) {
 
     let shiftX = event.clientX - basketHandler.getBoundingClientRect().left;
     let shiftY = event.clientY - basketHandler.getBoundingClientRect().top;
-  
-    document.body.append(basketHandler);
-  
+    
     moveAt(event.pageX, event.pageY);
   
     function moveAt(pageX, pageY) {
