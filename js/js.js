@@ -1,4 +1,30 @@
 
+// Слайдер 50на50 с кнопками
+function sliderMove (secondSlide, rangePosition) {
+secondSlide = document.querySelector('.slider__second').style.width =
+rangePosition = document.querySelector('.slider__input').value + "%";
+}
+
+function sliderBtn () {
+let beforeBtn = document.querySelector('.nav__btn-before');
+let afterBtn = document.querySelector('.nav__btn-after');
+let range = document.querySelector('.slider__input');
+
+beforeBtn.addEventListener('click', function(event) {
+    event.preventDefault();
+    range.value = 0;
+    sliderMove ();
+})
+afterBtn.addEventListener('click', function(event) {
+    event.preventDefault();
+    range.value = 100;
+    sliderMove ();
+})
+}
+sliderBtn ()
+
+
+
 // Открытие/закрытие меню на мобильной версии
 var link = document.querySelector('.menu-btn');
 var menu = document.querySelector('.page-header__usernav--active');
