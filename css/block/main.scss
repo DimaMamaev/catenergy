@@ -1047,6 +1047,7 @@ background-size: 26px 31px;
     .example__wrapper {
         background-color: $grey;
         background: linear-gradient(90deg, #f2f2f2 50%, #eaeaea 100%);
+        position: relative;
     }
     .example__section {
         padding: 0;
