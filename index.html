@@ -172,7 +172,9 @@
                             </div>
                             <div class="slider__nav">
                                 <button class="nav__btn-before" type="button">Было</button>
-                                <input type="range" class="slider__input" type="range" min="0" max="100" value="50" oninput="sliderMove()">
+                                <label for="input-range">
+                                    <input type="range" class="slider__input" type="range" min="0" max="100" value="50" oninput="sliderMove()">
+                                </label>
                                 <button class="nav__btn-after" type="button">Стало</button>
                             </div>
                         </section>
@@ -188,7 +190,7 @@
                 <h2 class="invitation__article">приглашаем к сотрудничеству дилеров!</h2>
                 <p class="invitation__adress">ул. Большая Конюшенная, д. 19/8  Санкт-Петербург</p>
             </div>
-            <div class="contacts__map"> <iframe class="map" src="https://www.google.com/maps/d/embed?mid=1SdLUomgGdYIvFw4AeDKVarr5RVrGhfCE"></iframe> </div>
+            <div class="contacts__map"> <iframe title="googlemap" class="map" src="https://www.google.com/maps/d/embed?mid=1SdLUomgGdYIvFw4AeDKVarr5RVrGhfCE"></iframe> </div>
         </section>
         <section class="page-footer__social">
             <a class="social__link" href="index.html">
@@ -198,7 +200,7 @@
             </a>
             <ul class="social__groups">
                 <li class="groups__item">
-                    <a class="groups__link" href="oops.html">
+                    <a class="groups__link" aria-label="Vk" href="oops.html">
                         <svg class="link__vk" width="22" height="12">
                             <title>мы в Вконтакте</title>
                             <use xlink:href="#footer-vk-logo"></use>
@@ -206,7 +208,7 @@
                     </a>
                 </li>
                 <li class="groups__item">
-                    <a class="groups__link" href="oops.html">
+                    <a class="groups__link" aria-label="Instagramm" href="oops.html">
                         <svg class="link__instagramm" width="16" height="16">
                             <title>мы в Инстаграме</title>
                             <use xlink:href="#footer-inst-logo"></use>
@@ -214,7 +216,7 @@
                     </a> 
                 </li>
                 <li class="groups__item">
-                    <a class="groups__link" href="oops.html">
+                    <a class="groups__link" aria-label="Facebook" href="oops.html">
                         <svg class="link__facebook" width="10" height="19">
                             <title>мы на Фэйсбук</title>
                             <use xlink:href="#footer-fb-logo"></use>
@@ -224,7 +226,7 @@
             </ul> 
             <section class="page-footer__rightholder">
                 <p>HTML Academy</p>
-                <a class="rightholder__link" href="https://htmlacademy.ru"></a>
+                <a class="rightholder__link" aria-label="RightHolder" href="https://htmlacademy.ru"></a>
                     <svg class="link__rightholder" width="27" height="34">
                         <title>Правообладатель</title>
                         <use xlink:href="#footer-htmlacademy-logo"></use>
