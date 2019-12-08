@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Dima Mamaiev"/>
-    <meta name="description" content="Магазин кошачей жрачки">
+    <meta name="description" content="Магазин здорового питания для котов">
     <meta name="keywords" content="корм для котов">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
     <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
-    <script src="js/svg4everybody.js"></script>
     <title>Магазин спортивного питания CAT ENERGY</title>
 </head>
 <body>
@@ -173,7 +172,7 @@
                             <div class="slider__nav">
                                 <button class="nav__btn-before" type="button">Было</button>
                                 <label for="input-range">
-                                    <input type="range" class="slider__input" type="range" min="0" max="100" value="50" oninput="sliderMove()">
+                                    <input type="range" class="slider__input" type="range" min="0" max="100" value="50" oninput="sliderMove()" onchange="sliderMove()">
                                 </label>
                                 <button class="nav__btn-after" type="button">Стало</button>
                             </div>
@@ -234,6 +233,6 @@
             </section>
         </section>
     </footer>
-<script src="js/js.js"></script>
+<script src="js/script.js" type="module"></script>
 </body>
 </html>
