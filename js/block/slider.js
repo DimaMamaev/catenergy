@@ -1,25 +1,26 @@
 // Слайдер 50на50 с кнопками
+const rangePosition = document.querySelector(".slider__input");
 
-export function sliderBtn() {
-  let mainSlide = document.querySelector(".slider__second");
-  let rangePosition = document.querySelector(".slider__input");
+function sliderRange() {
+  const mainSlide = document.querySelector(".slider__second");
 
-  function sliderPosition() {
+  (function sliderPosition() {
     mainSlide.style.width = rangePosition.value + "%";
-  }
-  sliderPosition();
+  })();
+}
 
+function sliderBtn() {
   const beforeBtn = document.querySelector(".nav__btn-before");
   const afterBtn = document.querySelector(".nav__btn-after");
 
   beforeBtn.addEventListener("click", event => {
     event.preventDefault();
     rangePosition.value = 0;
-    sliderPosition();
   });
   afterBtn.addEventListener("click", event => {
     event.preventDefault();
     rangePosition.value = 100;
-    sliderPosition();
   });
 }
+
+export { sliderRange, sliderBtn };

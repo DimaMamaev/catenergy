@@ -1,8 +1,8 @@
 // Открытие/закрытие меню на мобильной версии
 
 export function menuMobile() {
-  let openMenuBtn = document.querySelector(".menu-btn");
-  let menuActive = document.querySelector(".page-header__usernav--active");
+  const openMenuBtn = document.querySelector(".menu-btn");
+  const menuActive = document.querySelector(".page-header__usernav--active");
 
   openMenuBtn.addEventListener("click", event => {
     event.preventDefault();
