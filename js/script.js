@@ -6,4 +6,3 @@ menuMobile();
 import { privateOfficePopup } from "./block/popupReristration.js";
 privateOfficePopup();
 
-// Слайдер 50на50 с кнопками

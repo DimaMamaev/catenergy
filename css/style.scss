@@ -7,7 +7,119 @@
 @import "block/map.scss";
 @import "block/form.scss";
 @import "block/registration.scss";
-@import "block/basket.scss";
 @import "block/slider.scss";
 
 
+.reviews__title {
+    margin: 0;
+    padding: 0;
+    font-family: $oswald;
+    font-size: 36px;
+    line-height: 36px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    font-weight: normal;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.reviews__list{
+    margin: 0;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: $grey;
+    position: relative;
+    height: 240px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+.list-review__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 1s;
+    padding-right: 30px;
+}
+.list-review__item-show{
+    opacity: 1;
+    z-index: 2;
+}
+.review-item__reviewer-prop,
+.review-item__reviewer {
+    font-weight: bold;
+    font-size: $oswald;
+    margin: 0;
+    padding: 0;
+    font-family: $oswald;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: normal;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.review-item__review {
+    text-align: center;
+    font-weight: normal;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.reviews__nav {
+    position: relative;
+}
+.nav__show-prev {
+    position: absolute;
+    top: -130px;
+    left: 2px;
+    content: '';
+    background-color: black;
+    border: 10.5px solid $grey;
+    border-right-color: black;
+}
+.nav__show-next {
+    position: absolute;
+    top: -130px;
+    right: 2px;
+    content: '';
+    background-color: black;
+    border: 10.5px solid $grey;
+    border-left-color: black;
+}
+.review__client {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+
+@media (min-width:$tablet-width) {
+    .list-review__item {
+        flex-direction: row;
+    }
+    .review__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .list-review__item {
+        padding-top: 15px;
+    }
+    .review__client {
+        width: 200px;
+        height: 200px;
+        padding-left: 50px;
+    }
+    .review-item__review {
+        font-size: 18px;
+    }
+    .review-item__reviewer,
+    .review-item__reviewer-prop {
+        font-size: 20px;
+    }
+   
+}

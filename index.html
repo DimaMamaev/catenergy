@@ -172,7 +172,7 @@
                             <div class="slider__nav">
                                 <button class="nav__btn-before" type="button">Было</button>
                                 <label for="input-range">
-                                    <input type="range" class="slider__input" type="range" min="0" max="100" value="50" oninput="sliderRange()" onchange="sliderRange()">
+                                    <input type="range" class="slider__input" type="range" min="0" max="100" value="50" oninput="sliderPosition()" onchange="sliderPosition()">
                                 </label>
                                 <button class="nav__btn-after" type="button">Стало</button>
                             </div>
@@ -180,6 +180,74 @@
                     </div>
                 </div>
             </div>
+        </section>
+        <section class="page-main__reviews">
+            <h1 class="visually-hidden">Отзывы наших клиентов</h1>
+            <article class="reviews__title">Отзывы наших клиентов</article>
+            <ul class="reviews__list">
+                <li class="list-review__item list-review__item-show">
+                    <picture>
+                        <img class="review__client" src="img/reviewer-first.webp" alt="фото наших клиентов">
+                    </picture>
+                    <div class="review__wrapper">
+                        <p class="review-item__review">Пользуюсь кормом из Программы Cat Energy Slim уже пару лет.
+                            За это время НИ РАЗУ не было никаких проблем у кошечки.
+                            Причём, улучшения случились сразу и даже довольно неожиданно.</p>
+                        <p class="review-item__reviewer">Анастасия</p>
+                        <p class="review-item__reviewer-prop">28 года, инженер технолог</p>
+                    </div>
+                </li>
+                <li class="list-review__item">
+                    <picture>
+                        <img class="review__client" src="img/reviewer-second.webp" alt="фото наших клиентов">
+                    </picture>
+                    <div class="review__wrapper">
+                        <p class="review-item__review">Это единственный корм, который моя кошка не переедает и потребляет
+                            в меру. И цена у него, конечно, вполне себе адекватная, что не может не радовать.</p>
+                        <p class="review-item__reviewer">Виктория</p>
+                        <p class="review-item__reviewer-prop">25 лет, Голодный студент</p>
+                    </div>
+                </li>
+                <li class="list-review__item">
+                    <picture>
+                        <img class="review__client" src="img/reviewer-third.webp" alt="фото наших клиентов">
+                    </picture>
+                    <div class="review__wrapper">
+                        <p class="review-item__review">Идеальный сухой корм найден!
+                            Тот редкий случай, когда всё сошлось: прекрасная поедаемость
+                            приличный состав, отличная кондиция, туалет без 
+                            проблем.</p>
+                        <p class="review-item__reviewer">Даниил</p>
+                        <p class="review-item__reviewer-prop">27 лет, Дизайнер</p>
+                    </div>
+                </li>
+                <li class="list-review__item">
+                    <picture>
+                        <img class="review__client" src="img/reviewer-fourth.webp" alt="фото наших клиентов">
+                    </picture>
+                    <div class="review__wrapper">
+                        <p class="review-item__review">На мой взгляд, состав довольно интересный и вполне достойный.
+                            Нормы кормления небольшие. Лосось и сельдь для усатых гурманов. </p>
+                        <p class="review-item__reviewer">Анна</p>
+                        <p class="review-item__reviewer-prop">26 лет, Домохозяйка</p>
+                    </div>
+                </li>
+                <li class="list-review__item">
+                    <picture>
+                        <img class="review__client" src="img/reviewer-fifth.webp" alt="фото наших клиентов">
+                    </picture>
+                    <div class="review__wrapper">
+                        <p class="review-item__review">Ветеринар посоветовал покупать корма Cat Energy для стерилизованных кошек,
+                            они содержат меньше жиров. </p>
+                        <p class="review-item__reviewer">Иван</p>
+                        <p class="review-item__reviewer-prop">50 лет, Шеф крупной компании</p>
+                    </div>
+                </li>
+            </ul>
+            <section class="reviews__nav">
+                <span class="nav__show-next"></span>
+                <span class="nav__show-prev"></span>
+            </section>
         </section>
     </main>
     <footer class="page-footer">
@@ -189,7 +257,9 @@
                 <h2 class="invitation__article">приглашаем к сотрудничеству дилеров!</h2>
                 <p class="invitation__adress">ул. Большая Конюшенная, д. 19/8  Санкт-Петербург</p>
             </div>
-            <div class="contacts__map"> <iframe title="googlemap" class="map" src="https://www.google.com/maps/d/embed?mid=1SdLUomgGdYIvFw4AeDKVarr5RVrGhfCE"></iframe> </div>
+            <div class="contacts__map"> 
+                <iframe title="googlemap" class="map" src="https://www.google.com/maps/d/embed?mid=1SdLUomgGdYIvFw4AeDKVarr5RVrGhfCE"></iframe>
+            </div>
         </section>
         <section class="page-footer__social">
             <a class="social__link" href="index.html">
@@ -234,5 +304,7 @@
         </section>
     </footer>
 <script src="js/script.js" type="module"></script>
+<script src="js/sliders.js" type="module"></script>
+<script src="js/sliderreview.js"></script>
 </body>
 </html>
