@@ -8,5 +8,26 @@
 @import "block/form.scss";
 @import "block/registration.scss";
 @import "block/slider.scss";
-@import "block/sliderReview.scss"
+@import "block/sliderReview.scss";
 
+
+.page-main__products {
+    padding: 0;
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.selector__form {
+    display: flex;
+    flex-direction: column;
+    background-color: $grey;
+    padding: 25px;
+    border-radius: 25px;
+}
+.form__period {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
