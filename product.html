@@ -93,30 +93,25 @@
     <main class="page-main__products">
         <section class="products__selector">
             <form action="" class="selector__form">
+                <h2 class="form__article">Выбери свою программу питания!</h2>
                 <div class="form__programm">
                     <label for="">Программа</label>
-                    <select name="" id="">
-                        <option value="" hidden>Выбрать</option>
-                        <option value="">Похудение</option>
-                        <option value="">Набор массы</option>
-                        <option value="" disabled>Сбалансированная</option>
-                        <option value="" disabled>На стероидах</option>
+                    <select id="programm__select">
+                        <option value="Выбрать" hidden>Выбрать</option>
+                        <option value="Похудение" >Похудение</option>
+                        <option value="Набор массы" >Набор массы</option>
+                        <option value="Сбалансированная" disabled>Сбалансированная</option>
+                        <option value="На стероидах" disabled>На стероидах</option>
                     </select>
                 </div>
-                <div class="form__period">
-                    <label for="">Срок питания</label>
-                    <select name="" id="">
-                        <option value="" hidden>Выбрать</option>
-                        <option value="">Неделя</option>
-                        <option value="">Месяц</option>
-                        <option value="" disabled>Квартал</option>
-                        <option value="" disabled>Год</option>
-                    </select>
-                </div>
-                <input type="submit" value="Выбрать питание!">
             </form>
         </section>
         <section class="main__products">
+            <ul class="products__list">
+            </ul>
+            <a class="products__link" href="form.html"> 
+                <button class="link__btn">заказать</button>
+            </a>
         </section>
     </main>
     <footer class="page-footer">
@@ -164,5 +159,6 @@
         </section>
     </footer>
 <script src="js/script.js" type="module"></script>
+<script src="js/product.js"></script>
 </body>
 </html>
