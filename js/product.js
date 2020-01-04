@@ -54,7 +54,9 @@ const products = [
     console.log(selectedProgramm);
     if (selectedProgramm === "Набор массы") {
       renderProProd(objOfProd);
+      programmSelector.removeEventListener("change", selectorHandler);
     } else if (selectedProgramm === "Похудение") {
+      programmSelector.addEventListener("change", selectorHandler);
       renderSlimProd(objOfProd);
   }
 }
