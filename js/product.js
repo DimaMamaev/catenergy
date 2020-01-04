@@ -7,7 +7,8 @@ const products = [
     title: "Slim",
     description: "Вкус : Гречка",
     weight: "Вес : 500Г",
-    cost: "Цена : 400Р"
+    cost: "Цена : 400Р",
+    logo: "img/buckwheat-small-mobile@1x.jpg"
   },
   {
     _id: "56421645346346456",
@@ -15,7 +16,8 @@ const products = [
     title: "Slim",
     description: "Вкус : Рис",
     weight: "Вес : 500Г",
-    cost: "Цена : 400Р"
+    cost: "Цена : 400Р",
+    logo: "img/rice-small-mobile@1x.jpg"
   },
   {
     _id: "5642165234112334435",
@@ -23,7 +25,8 @@ const products = [
     title: "Pro",
     description: "Вкус : Курица",
     weight: "Вес : 500Г",
-    cost: "Цена : 700Р"
+    cost: "Цена : 700Р",
+    logo: "img/chicken-small-mobile@1x.jpg"
   },
   {
     _id: "234234235234112334435",
@@ -31,7 +34,8 @@ const products = [
     title: "Pro",
     description: "Вкус : Рыба",
     weight: "Вес : 500Г",
-    cost: "Цена : 700Р"
+    cost: "Цена : 700Р",
+    logo: "img/fish-small-mobile@1x.jpg"
   }
 ];
 
@@ -77,9 +81,12 @@ const products = [
     prodContainer.appendChild(fragment);
   }
 
-  function listProduct({ description, weight, cost } = {}) {
+  function listProduct({ description, weight, cost, logo } = {}) {
     const li = document.createElement("li");
     li.classList.add("list__products");
+    const img = document.createElement("img");
+    img.classList.add("products__logo");
+    img.setAttribute("src", logo);
     const p = document.createElement("p");
     p.classList.add("products__description");
     p.textContent=description;
@@ -89,7 +96,7 @@ const products = [
     const spanCost = document.createElement("span")
     spanCost.classList.add("products__cost");
     spanCost.textContent=cost;
-
+    li.appendChild(img);
     li.appendChild(p);
     li.appendChild(spanWeight);
     li.appendChild(spanCost);
