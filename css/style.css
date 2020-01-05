@@ -3823,4 +3823,34 @@ input[type="checkbox"].visually-hidden {
 .page-footer__social--product {
   padding-top: 25px;
 }
+
+.products__close-btn {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  content: '';
+  width: 20px;
+  height: 2px;
+  background-color: black;
+  display: block;
+  border: none;
+  outline: none;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.products__close-btn::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 2px;
+  background-color: black;
+  display: block;
+  border: none;
+  outline: none;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
 /*# sourceMappingURL=style.css.map */

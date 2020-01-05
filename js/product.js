@@ -51,7 +51,6 @@ const products = [
 
  function selectorHandler(e) {
     const selectedProgramm = programmSelector.value;
-    console.log(selectedProgramm);
     if (selectedProgramm === "Набор массы") {
       renderProProd(objOfProd);
       programmSelector.removeEventListener("change", selectorHandler);
@@ -98,10 +97,13 @@ const products = [
     const spanCost = document.createElement("span")
     spanCost.classList.add("products__cost");
     spanCost.textContent=cost;
-    li.appendChild(img);
-    li.appendChild(p);
-    li.appendChild(spanWeight);
-    li.appendChild(spanCost);
+    const btn = document.createElement("button");
+    btn.classList.add("products__close-btn");
+
+    const liArray = [img, p, spanWeight, spanCost, btn];
+    liArray.forEach(elem => {
+      li.appendChild(elem)
+    });
     return li;
   }
 }) (products);
