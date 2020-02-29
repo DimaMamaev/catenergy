@@ -1,12 +1,11 @@
-// Слайдер 50на50 с кнопками
 const rangePosition = document.querySelector(".slider__input");
 const mainSlide = document.querySelector(".slider__second");
 
-export function sliderPosition() {
+function sliderPosition() {
   mainSlide.style.width = rangePosition.value + "%";
 }
 
-export function sliderBtn() {
+(function sliderBtn() {
   const beforeBtn = document.querySelector(".nav__btn-before");
   const afterBtn = document.querySelector(".nav__btn-after");
 
@@ -20,4 +19,4 @@ export function sliderBtn() {
     rangePosition.value = 100;
     sliderPosition();
   });
-}
+})();
